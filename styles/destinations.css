@@ -1,0 +1,89 @@
+.dest-intro {
+  margin: 0;
+  background-color: #eee;
+  padding: 1.5em 11em;
+  min-height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dest-cat {
+  font-weight: 600;
+  margin: 0.2em 0;
+  font-size: 1.7em;
+}
+.all-des {
+  padding: 1.7em 11em;
+}
+.des-btn {
+  font-size: 0.9em;
+  padding: 0.8em 1.1em;
+  margin: 0 0.7em 0 0;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 0.5em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.des-btn:first-child {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.des-cards {
+  margin: 1.5em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.2em;
+}
+
+.des-img1:hover,
+.des-img2:hover,
+.des-img3:hover,
+.des-img4:hover,
+.des-img5:hover,
+.des-img6:hover,
+.des-img7:hover,
+.des-img8:hover {
+  transform: scale(1.2);
+}
+
+.des-name {
+  font-weight: 600;
+}
+.des-cards-main {
+  margin: 1.5em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.2em;
+}
+
+.des-img1,
+.des-img2,
+.des-img3,
+.des-img4,
+.des-img5,
+.des-img6,
+.des-img7,
+.des-img8 {
+  transition: transform 400ms ease;
+  height: 220px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 0.7em;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.des-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.name-des{
+    color: rgb(95, 88, 88);
+}
