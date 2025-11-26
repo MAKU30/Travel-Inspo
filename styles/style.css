@@ -70,26 +70,26 @@ header{
 
 .exp-images1{
     flex: 1;
-    background-image: url(img/Vigan\ tour.jpg);
+    background-image: url(../img/Vigan\ tour.jpg);
 }
 .exp-images2{
     flex: 1;
-    background-image: url(img/Manila\ Philippines.jpg);
+    background-image: url(../img/Manila\ Philippines.jpg);
     height: 85vh;
 }
 .exp-images3{
     flex: 1;
-    background-image: url(img/banaue_rice_terrace_view.jpg);
+    background-image: url(../img/banaue_rice_terrace_view.jpg);
     height: 85vh;
 }
 .exp-images4{
     flex: 1;
-    background-image: url(img/El\ Nido\ Palawan\ Beach\ 1.jpg);
+    background-image: url(../img/El\ Nido\ Palawan\ Beach\ 1.jpg);
     height: 85vh;
 }
 .exp-images5{
     flex: 1;
-    background-image: url(img/Cebu\ mactan.webp);
+    background-image: url(../img/Cebu\ mactan.webp);
     height: 85vh;
 }
 .intro-des{
@@ -135,7 +135,7 @@ header{
     height: 60vh;
     background-color: #eee;
     border-radius: 0.5em;
-    background-image: url(img/Vigan\ City\ 1.jpg);
+    background-image: url(../img/Vigan\ City\ 1.jpg);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 .img2, .img3{
@@ -144,10 +144,10 @@ header{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);  
 }
 .img2{
-    background-image: url(img/Bohol\ 1\ .jpg);
+    background-image: url(../img/Bohol\ 1\ .jpg);
 }
 .img3{
-    background-image: url(img/Siargao\ Island\ 3.jpg);
+    background-image: url(../img/Siargao\ Island\ 3.jpg);
 }
 hr{
     width: 85%;
@@ -189,16 +189,16 @@ hr{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 .img-cont1{
-    background-image: url(img/Palawan\ Island\ 3.jpg);
+    background-image: url(../img/Palawan\ Island\ 3.jpg);
 }
 .img-cont2{
-    background-image: url(img/Rice\ terraces\ cordilleras.png);
+    background-image: url(../img/Rice\ terraces\ cordilleras.png);
 }
 .img-cont3{
-    background-image: url(img/Cebu\ Magellan’s\ Cross.jpg);
+    background-image: url(../img/Cebu\ Magellan’s\ Cross.jpg);
 }
 .img-cont4{
-    background-image: url(img/Boracay\ Beach.jpg);
+    background-image: url(../img/Boracay\ Beach.jpg);
 }
 .top-dest{
     padding: 3em 10.1em;
@@ -232,22 +232,22 @@ hr{
     box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 .top-card1{
-    background-image: url(img/El\ Nido\ Palawan\ \,\ PH\(1\).jpg);
+    background-image: url(../img/El\ Nido\ Palawan\ \,\ PH\(1\).jpg);
 }
 .top-card2{
-    background-image: url(img/Bohol\ 2\ .jpg);
+    background-image: url(../img/Bohol\ 2\ .jpg);
 }
 .top-card3{
-    background-image: url(img/CLOUD\ 9\ Siargao\ Beach\ 1.avif);
+    background-image: url(../img/CLOUD\ 9\ Siargao\ Beach\ 1.avif);
 }
 .top-card4{
-    background-image: url(img/Manila\ Quipo\ Chruch.jpg);
+    background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
 }
 .top-card5{
-    background-image: url(img/Palawan\ Island\ 2.jpg);
+    background-image: url(../img/Palawan\ Island\ 2.jpg);
 }
 .top-card6{
-    background-image: url(img/Siargao\ Island\ 2.jpg);
+    background-image: url(../img/Siargao\ Island\ 2.jpg);
 }
 footer{
     border-top: 1px solid lightgray;
@@ -428,64 +428,64 @@ footer{
     box-shadow: 0 7px 10px rgba(0,0,0,0.5);
 }
 .gal-card1{
-    background-image: url(img/Vigan\ tour.jpg);
+    background-image: url(../img/Vigan\ tour.jpg);
 }
 .gal-card2{
-    background-image: url(img/banaue_rice_terrace_view.jpg);
+    background-image: url(../img/banaue_rice_terrace_view.jpg);
 }
 .gal-card3{
-    background-image: url(img/Vigan\ City\ 1.jpg);
+    background-image: url(../img/Vigan\ City\ 1.jpg);
 }
 .gal-card4{
-    background-image: url(img/Bohol\ 1\ .jpg);
+    background-image: url(../img/Bohol\ 1\ .jpg);
 }
 .gal-card5{
-    background-image: url(img/Sumilon\ Island\ \ Cebu\ 2.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 2.jpg);
 }
 .gal-card6{
-    background-image: url(img/Bohol\ 2\ .jpg);
+    background-image: url(../img/Bohol\ 2\ .jpg);
 }
 .gal-card7{
-    background-image: url(img/Sumilon\ Island\ \ Cebu\ 1.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 1.jpg);
 }
 .gal-card8{
-    background-image: url(img/Boracay\ 2.jpg);
+    background-image: url(../img/Boracay\ 2.jpg);
 }
 .gal-card9{
-    background-image: url(img/Siargao\ Island\ 3.jpg);
+    background-image: url(../img/Siargao\ Island\ 3.jpg);
 }
 .gal-card10{
-    background-image: url(img/Cebu\ mactan.webp);
+    background-image: url(../img/Cebu\ mactan.webp);
 }
 .gal-card11{
-    background-image: url(img/Siargao\ Island\ 2.jpg);
+    background-image: url(../img/Siargao\ Island\ 2.jpg);
 }
 .gal-card12{
-    background-image: url(img/Cebu\ Magellan’s\ Cross.jpg);
+    background-image: url(../img/Cebu\ Magellan’s\ Cross.jpg);
 }
 .gal-card13{
-    background-image: url(img/Rice\ terraces\ cordilleras\ 2.jpg);
+    background-image: url(../img/Rice\ terraces\ cordilleras\ 2.jpg);
 }
 .gal-card14{
-    background-image: url(img/Cloud\ 9\ Siargao\ Beach.jpg);
+    background-image: url(../img/Cloud\ 9\ Siargao\ Beach.jpg);
 }
 .gal-card15{
-    background-image: url(img/El\ Nido\ Palawan\ \,\ PH\(1\).jpg);
+    background-image: url(../img/El\ Nido\ Palawan\ \,\ PH\(1\).jpg);
 }
 .gal-card16{
-    background-image: url(img/Manila\ Philippines.jpg);
+    background-image: url(../img/Manila\ Philippines.jpg);
 }
 .gal-card17{
-    background-image: url(img/Palawan\ Island\ 2.jpg);
+    background-image: url(../img/Palawan\ Island\ 2.jpg);
 }
 .gal-card18{
-    background-image: url(img/Manila\ Quipo\ Chruch.jpg);
+    background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
 }
 .gal-card19{
-    background-image: url(img/Palawan\ Island\ 3.jpg);
+    background-image: url(../img/Palawan\ Island\ 3.jpg);
 }
 .gal-card20{
-    background-image: url(img/Rice\ terraces\ cordilleras.png);
+    background-image: url(../img/Rice\ terraces\ cordilleras.png);
 }
 .load-cont{
     padding: 2.5em;
