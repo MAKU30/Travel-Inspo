@@ -61,12 +61,12 @@ header{
     position: relative;
     width: 100%;
 }
-.exp-img{
+/* .exp-img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.2s ease-in;
-}
+} */
 
 .exp-images1{
     flex: 1;
@@ -270,78 +270,6 @@ footer{
 .trav, .ex-des, .res-des, .conn-des{
     font-weight: 600;
     font-size: 1.1em;
-}
-.dest-intro{
-    margin:0;
-    background-color: #eee;
-    padding: 1.5em 11em;
-    min-height: 18vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.dest-cat{
-    font-weight: 600;
-    margin: 0.2em 0;
-    font-size: 1.7em;
-}
-.all-des{
-    padding: 1.7em 11em;
-}
-.des-btn{
-    font-size: 0.9em;
-    padding: 0.8em 1.1em;
-    margin: 0 0.7em 0 0;
-    background-color: white;
-    border: 1px solid lightgrey;
-    border-radius: 0.5em;
-    font-weight: 600;
-    cursor: pointer;
-}
-.des-btn:first-child{
-    background-color: black;
-    color: white;
-    border: none;
-}
-.des-cards{
-    margin: 1.5em 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.2em;
-}
-.des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8{
-    height: 30vh;
-    background-color: #eee;
-    border-radius: 0.7em;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
-}
-.des-img1{
-    background-image: url(img/Palawan\ Island\ 1.jpg);
-}
-.des-img2{
-    background-image: url(img/Boracay\ 2.jpg);
-}
-.des-img3{
-    background-image: url(img/Rice\ terraces\ cordilleras\ 2.jpg);
-}
-.des-img4{
-    background-image: url(img/Manila\ Philippines.jpg);
-}
-.des-img5{
-    background-image: url(img/Cebu\ mactan.webp);
-}
-.des-img6{
-    background-image: url(img/Cloud\ 9\ Siargao\ Beach.jpg);
-}
-.des-img7{
-    background-image: url(img/Bohol\ 3\ .jpg);
-}
-.des-img8{
-    background-image: url(img/Vigan\ tour.jpg);
-}
-.des-name{
-    font-weight: 600;
 }
 .search-des{
     background-color: #eee;
