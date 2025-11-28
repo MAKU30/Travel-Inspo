@@ -74,6 +74,12 @@ footer{
     font-weight: 600;
     font-size: 1.1em;
 }
+.exp-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s ease-in;
+}
 .dest-intro{
     margin:0;
     background-color: #eee;
@@ -88,10 +94,6 @@ footer{
     margin: 0.2em 0;
     font-size: 1.7em;
 }
-
-.all-des{
-    padding: 1.7em 11em;
-}
 .des-btn{
     font-size: 0.9em;
     padding: 0.8em 1.1em;
@@ -101,96 +103,84 @@ footer{
     border-radius: 0.5em;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.2s ease-in;
 }
-.des-btn:hover{
+.des-btn:first-child{
     background-color: black;
     color: white;
+    border: none;
 }
-.des-cards{
-    margin: 1.5em 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.2em;
+hr{
+    width: 85%;
+    border: none;
+    height: 1px;
+    background-color: lightgray;
 }
-
-.des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8{
-    height: 30vh;
+.essential{
+    margin: 0;
     background-color: #eee;
-    border-radius: 0.7em;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
-}
-.des-img1{
-    background-image: url(../img/Palawan\ Island\ 1.jpg);
-}
-.des-img2{
-    background-image: url(../img/Boracay\ 2.jpg);
-}
-.des-img3{
-    background-image: url(../img/Rice\ terraces\ cordilleras\ 2.jpg);
-}
-.des-img4{
-    background-image: url(../img/Manila\ Philippines.jpg);
-}
-.des-img5{
-    background-image: url(../img/Cebu\ mactan.webp);
-}
-.des-img6{
-    background-image: url(../img/Cloud\ 9\ Siargao\ Beach.jpg);
-}
-.des-img7{
-    background-image: url(../img/Bohol\ 3\ .jpg);
-}
-.des-img8{
-    background-image: url(../img/Vigan\ tour.jpg);
-}
-.des-name{
-    font-weight: 600;
-}
-.search-des{
-    background-color: #eee;
-    min-height: 35vh;
-    margin: 1.5em 0 4.5em 0;
+    padding: 1.5em 11em;
+    min-height: 18vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tip-cont{
+    padding: 2em 21em;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 1em;
+}
+.tip-cards{
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    gap: 1.5em;
+    display: flex;
+    border-radius: 0.6em;
+    border: 1px solid lightgray;
+}
+.icon-cont{
+    height: 7vh;
+    width: 3.5vw;
+    background-color: #eee;
+    border-radius: 0.6em;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.cant-find{
+.tips-cont{
+    flex: 1;
+}
+.tips{
+    margin-top: 0;
     font-size: 1.2em;
     font-weight: 600;
-    margin: 0.4em;
 }
-#srch-btn{
-    margin: 1.1em 0 0 0;
-    font-size: 0.9em;
-    padding: 1em 2em;
-    background-color: black;
-    color: white;
-    border-radius: 0.6em;
-    cursor: pointer;
-    transition: 0.2s ease-in;
+.tip-des{
+    text-align: justify;
+}
+.hr-tips{
+    width: 67%;
     border: none;
+    height: 1px;
+    background-color: lightgray;
 }
-#srch-btn:hover{
-    background-color: blue;
-    color: white;
+.gen-adv{
+    padding: 1.5em 21em;
+    font-size: 1.1em;
 }
-.exp-img{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.2s ease-in;
+.gen-title{
+    margin-bottom: 1.5em;
 }
-.exp-img:hover{
-    transform: translateY(-5%);
+.trav-adv{
+    margin-bottom: 2em;
 }
-.spec{
-    background-color: black;
-    color: white;
+.adv{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0.7em;
 }
-.des-foc:focus{
-    background-color: black;
-    color: white;
+.adv-des{
+    margin-top: 0;
 }
