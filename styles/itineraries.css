@@ -74,6 +74,12 @@ footer{
     font-weight: 600;
     font-size: 1.1em;
 }
+.exp-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s ease-in;
+}
 .dest-intro{
     margin:0;
     background-color: #eee;
@@ -87,10 +93,6 @@ footer{
     font-weight: 600;
     margin: 0.2em 0;
     font-size: 1.7em;
-}
-
-.all-des{
-    padding: 1.7em 11em;
 }
 .des-btn{
     font-size: 0.9em;
@@ -107,46 +109,124 @@ footer{
     background-color: black;
     color: white;
 }
-.des-cards{
-    margin: 1.5em 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.2em;
+hr{
+    width: 85%;
+    border: none;
+    height: 1px;
+    background-color: lightgray;
 }
-
-.des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8{
-    height: 30vh;
+.schedule{
+    padding: 1.7em 11em;
+}
+.iti-cont{
+    padding: 2em 11em;
+}
+.date-info{
     background-color: #eee;
-    border-radius: 0.7em;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
+    display: flex;
+    padding: 0 0 1.3em 0;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    border: 1px solid lightgray;
 }
-.des-img1{
-    background-image: url(../img/Palawan\ Island\ 1.jpg);
+.iti-box{
+    margin-bottom: 3.5em;
 }
-.des-img2{
-    background-image: url(../img/Boracay\ 2.jpg);
+.iti-dur{
+    padding: 1em 0 0 1.5em;
+    flex: 1;
 }
-.des-img3{
-    background-image: url(../img/Rice\ terraces\ cordilleras\ 2.jpg);
+.day-des{
+    margin-bottom: 0.6em;
 }
-.des-img4{
-    background-image: url(../img/Manila\ Philippines.jpg);
+.duration{
+    margin-top: 0;
 }
-.des-img5{
-    background-image: url(../img/Cebu\ mactan.webp);
+.iti-days, .iti-des, .iti-tags{
+    margin: 0 2em 0 0;
 }
-.des-img6{
-    background-image: url(../img/Cloud\ 9\ Siargao\ Beach.jpg);
+.diff-cont{
+    margin: 1em 1.5em 0 0;
+    text-align: end;
 }
-.des-img7{
-    background-image: url(../img/Bohol\ 3\ .jpg);
+.diff{
+    margin-bottom: 0.6em;
 }
-.des-img8{
-    background-image: url(../img/Vigan\ tour.jpg);
+.iti-diff{
+    margin-top: 0;
 }
-.des-name{
+.highlights-daytoday{
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}
+.highlights{
+    min-width: 23vw;
+    padding: 0.5em 1em 1em 1.5em;
+    font-size: 1.1em;
+}
+.iti-ul{
+    padding: 0;
+    list-style: none;
+}
+.dot{
+    font-size: 2em;
+    margin: 0 0.2em 0 0;
+    color: blue;
+}
+.daytoday{
+    flex: 1;
+    padding: 0.3em 0 0 0;
+}
+.day-title{
     font-weight: 600;
+    font-size: 1.2em;
+}
+.day-plan{
+    display: flex;
+    margin: 0 0 1em 0;
+    gap: 1em;
+}
+.day-num{
+    background-color: rgb(193, 232, 245);
+    text-align: center;
+    padding: 0.3em;
+    color: blue;
+    min-width: 3.5vw;
+    border-radius: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.d{
+    margin: 0 0 0.5em 0;
+}
+.num{
+    margin: 0;
+}
+.sched-plan{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sched{
+    margin: bottom 0.4em;;
+    margin-top: 0;
+}
+.plan{
+    margin-top: 0;
+    font-size: 1.1em;
+}
+.others{
+    padding: 1.6em;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom-right-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
 }
 .search-des{
     background-color: #eee;
@@ -162,6 +242,14 @@ footer{
     font-weight: 600;
     margin: 0.4em;
 }
+.spec{
+    background-color: black;
+    color: white;
+}
+.des-foc:focus{
+    background-color: black;
+    color: white;
+}
 #srch-btn{
     margin: 1.1em 0 0 0;
     font-size: 0.9em;
@@ -175,22 +263,5 @@ footer{
 }
 #srch-btn:hover{
     background-color: blue;
-    color: white;
-}
-.exp-img{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.2s ease-in;
-}
-.exp-img:hover{
-    transform: translateY(-5%);
-}
-.spec{
-    background-color: black;
-    color: white;
-}
-.des-foc:focus{
-    background-color: black;
     color: white;
 }
