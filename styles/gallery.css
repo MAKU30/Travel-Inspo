@@ -1,0 +1,223 @@
+body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: sans-serif;
+    padding: 4.5em 0 0 0;
+    margin: 0;
+    position: relative;
+}
+header{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 0 11em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.title{
+    margin: 0;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.spo-blue{
+    color: blue;
+}
+.nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+.nav-li{
+    height: 4.5em;
+}
+.a-head{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1.5em;
+    color: black;
+    font-size: 1em;
+}
+.a-nav:active{
+    font-weight: 600;
+}
+.s{
+    font-size: 1.2em;
+    margin-left: 0.5em;
+}
+footer{
+    border-top: 1px solid lightgray;
+    font-size: 1.1em;
+    display: grid;
+    padding: 2em 10.1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.exp-ul{
+    list-style: none;
+    padding: 0;
+}
+.exp-li{
+    margin: 0 0 0.8em 0;
+}
+.exp-a{
+    text-decoration: none;
+    color: black;
+}
+.trav, .ex-des, .res-des, .conn-des{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.exp-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s ease-in;
+}
+.dest-intro{
+    margin:0;
+    background-color: #eee;
+    padding: 1.5em 11em;
+    min-height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dest-cat{
+    font-weight: 600;
+    margin: 0.2em 0;
+    font-size: 1.7em;
+}
+.des-btn{
+    font-size: 0.9em;
+    padding: 0.8em 1.1em;
+    margin: 0 0.7em 0 0;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 0.5em;
+    font-weight: 600;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.des-btn:hover{
+    background-color: black;
+    color: white;
+}
+hr{
+    width: 85%;
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+}
+.gallery{
+    padding: 1.7em 11em;
+}
+.gal-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.5em;
+    margin: 2em 0 0 0;
+}
+.gal-hov:hover{
+    transform: scale(1.1);
+}
+.gal-card1, .gal-card2, .gal-card3, .gal-card4, .gal-card5, .gal-card6, .gal-card7, .gal-card8, .gal-card9, .gal-card10, .gal-card11, .gal-card12, .gal-card13, .gal-card14, .gal-card15, .gal-card16,.gal-card17, .gal-card18, .gal-card19, .gal-card20 {
+    background-color: #eee;
+    min-height: 30vh;
+    border-radius: 0.6em;
+    transition: 0.2s ease-in;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
+}
+.gal-card1{
+    background-image: url(img/Vigan\ tour.jpg);
+}
+.gal-card2{
+    background-image: url(img/banaue_rice_terrace_view.jpg);
+}
+.gal-card3{
+    background-image: url(img/Vigan\ City\ 1.jpg);
+}
+.gal-card4{
+    background-image: url(img/Bohol\ 1\ .jpg);
+}
+.gal-card5{
+    background-image: url(img/Sumilon\ Island\ \ Cebu\ 2.jpg);
+}
+.gal-card6{
+    background-image: url(img/Bohol\ 2\ .jpg);
+}
+.gal-card7{
+    background-image: url(img/Sumilon\ Island\ \ Cebu\ 1.jpg);
+}
+.gal-card8{
+    background-image: url(img/Boracay\ 2.jpg);
+}
+.gal-card9{
+    background-image: url(img/Siargao\ Island\ 3.jpg);
+}
+.gal-card10{
+    background-image: url(img/Cebu\ mactan.webp);
+}
+.gal-card11{
+    background-image: url(img/Siargao\ Island\ 2.jpg);
+}
+.gal-card12{
+    background-image: url(img/Cebu\ Magellan’s\ Cross.jpg);
+}
+.gal-card13{
+    background-image: url(img/Rice\ terraces\ cordilleras\ 2.jpg);
+}
+.gal-card14{
+    background-image: url(img/Cloud\ 9\ Siargao\ Beach.jpg);
+}
+.gal-card15{
+    background-image: url(img/El\ Nido\ Palawan\ \,\ PH\(1\).jpg);
+}
+.gal-card16{
+    background-image: url(img/Manila\ Philippines.jpg);
+}
+.gal-card17{
+    background-image: url(img/Palawan\ Island\ 2.jpg);
+}
+.gal-card18{
+    background-image: url(img/Manila\ Quipo\ Chruch.jpg);
+}
+.gal-card19{
+    background-image: url(img/Palawan\ Island\ 3.jpg);
+}
+.gal-card20{
+    background-image: url(img/Rice\ terraces\ cordilleras.png);
+}
+.load-cont{
+    padding: 2.5em;
+    text-align: center;
+}
+.load-btn{
+    font-size: 0.9em;
+    padding: 0.8em 1.3em;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.load-btn:hover{
+    background-color: black;
+    color: white;
+}
+.spec{
+    background-color: black;
+    color: white;
+}
+.des-foc:focus{
+    background-color: black;
+    color: white;
+}
