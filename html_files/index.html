@@ -1,159 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>TravSpo - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
 </head>
-
 <body>
-  <header>
-    <h1 class="title">Trav<span class="spo-blue">Spo</span></h1>
+    <header>
+        <h1 class="title">Trav<span class="spo-blue">Spo</span> 
+        </h1>
 
-    <ul class="nav">
-      <li class="home-li nav-li">
-        <a href="index.html" id="home-a" class="a-head">Home</a>
-      </li>
-      <li class="dest-li nav-li">
-        <a href="destinations.html" id="dest-a" class="a-head">Destination</a>
-      </li>
-      <li class="iti-li nav-li">
-        <a href="itineraries.html" id="iti-a" class="a-head">Itineraries</a>
-      </li>
-      <li class="gal-li nav-li">
-        <a href="gallery.html" id="gal-a" class="a-head">Gallery</a>
-      </li>
-      <li class="trav-li nav-li">
-        <a href="travel_tips.html" id="trav-a" class="a-head">Travel Tips</a>
-      </li>
-      <li class="search-li nav-li">
-        <a href="#" id="search-a" class="a-head s"><i class="fa-solid fa-magnifying-glass"></i></a>
-      </li>
-    </ul>
-  </header>
+        <ul class="nav">
+            <li class="home-li nav-li">
+                <a href="index.html" id="home-a" class="a-head">Home</a>
+            </li>
+            <li class="dest-li nav-li">
+                <a href="destinations.html" id="dest-a" class="a-head">Destination</a>
+            </li>
+            <li class="iti-li nav-li">
+                <a href="itineraries.html" id="iti-a" class="a-head">Itineraries</a>
+            </li>
+            <li class="gal-li nav-li">
+                <a href="gallery.html" id="gal-a" class="a-head">Gallery</a>
+            </li>
+            <li class="trav-li nav-li">
+                <a href="travel_tips.html" id="trav-a" class="a-head">Travel Tips</a>
+            </li>
+            <li class="search-li nav-li">
+                <button href="" id="trav-a" class="a-head s">
+                    <i class="fa-solid fa-magnifying-glass s-hide"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
 
-  <div class="explore-sec">
-    <div class="exp-images1 exp-img"></div>
-    <div class="exp-images2 exp-img"></div>
-    <div class="exp-images3 exp-img"></div>
-    <div class="exp-images4 exp-img"></div>
-    <div class="exp-images5 exp-img"></div>
-    <div class="intro-des">
-      <p class="exp-des">Experience the Philippines</p>
-      <p class="disc-des">Discover pristine beaches, vibrant cities, and rich cultural heritage across 7,000 islands</p>
-      <button id="explore-btn">Explore Destinations</button>
+    <div class="explore-sec">
+        <div class="exp-images1 exp-img">
+        </div>
+        <div class="exp-images2 exp-img">
+        </div>
+        <div class="exp-images3 exp-img">
+        </div>
+        <div class="exp-images4 exp-img">
+        </div>
+        <div class="exp-images5 exp-img">
+        </div>    
+        <div class="intro-des">
+            <p class="exp-des">Experience the Philippines</p>
+            <p class="disc-des">Discover pristine beaches, vibrant cities, and rich cultural heritage across 7,000 islands</p>
+            <button id="explore-btn">Explore Destinations</button>
+        </div>
     </div>
-  </div>
 
-  <div class="show-destination">
-    <div class="img1 exp-img"></div>
-    <div class="img2 exp-img"></div>
-    <div class="img3 exp-img"></div>
-  </div>
-  <hr>
+    <div class="show-destination">
+        <div class="img1 exp-img hover-img"></div>
+        <div class="img2 exp-img hover-img"></div>
+        <div class="img3 exp-img hover-img"></div>
+    </div>
+    <hr>
 
-  <div class="category-sec">
-    <p class="exp-cat">Explore by Category</p>
-    <button id="beaches-btn" class="cat-btn des-btn">Beaches</button>
-    <button id="city-btn" class="cat-btn des-btn">City</button>
-    <button id="nature-btn" class="cat-btn des-btn">Nature</button>
-    <button id="cultural-btn" class="cat-btn des-btn">Cultural</button>
-    <button id="adventure-btn" class="cat-btn des-btn">Adventure</button>
+    <div class="category-sec">
+        <p class="exp-cat">Explore by Category</p>
+        <button class="cat-btn  beach-btn">Beaches</button>
+        <button class="cat-btn city-btn">City</button>
+        <button  class="cat-btn nature-btn">Nature</button>
+        <button  class="cat-btn cultural-btn">Cultural</button>
+        <button  class="cat-btn adventure-btn">Adventure</button>
 
-    <div class="cards">
-      <div class="card">
-        <div class="img-cont1 exp-img"></div>
-        <p class="name">Palawan</p>
-      </div>
-      <div class="card">
-        <div class="img-cont2 exp-img"></div>
-        <p class="name">Banaue</p>
-      </div>
-      <div class="card">
-        <div class="img-cont3 exp-img"></div>
-        <p class="name">Cebu</p>
-      </div>
-      <div class="card">
-        <div class="img-cont4 exp-img"></div>
-        <p class="name">Boracay</p>
-      </div>
+        <div class="cards">
+            <div class="card beach-img">
+                <div class="img-cont1 exp-img hov-eff">
+                </div>
+                <p class="name">Palawan</p>
+            </div>
+            <div class="card nature-img">
+                <div class="img-cont2 exp-img hov-eff">
+                </div>
+                <p class="name">Banaue</p>
+            </div>
+            <div class="card city-img">
+                <div class="img-cont3 exp-img hov-eff">
+                </div>
+                <p class="name">Cebu</p>
+            </div>
+            <div class="card beach-img">
+                <div class="img-cont4 exp-img hov-eff">
+                </div>
+                <p class="name">Boracay</p>
+            </div>
+            <!--D-none-->
+            <div class="card cultural-img d-none">
+                <div class="img-cont5 exp-img hov-eff">
+                </div>
+                <p class="name">Vigan City</p>
+            </div>
+            <div class="card adventure-img d-none">
+                <div class="img-cont6 exp-img hov-eff">
+                </div>
+                <p class="name">Cebu</p>
+            </div>
+            <div class="card adventure-img d-none">
+                <div class="img-cont7 exp-img hov-eff">
+                </div>
+                <p class="name">Boracay</p>
+            </div>
+            <div class="card adventure-img d-none">
+                <div class="img-cont8 exp-img hov-eff">
+                </div>
+                <p class="name">Palawan</p>
+            </div>
+            <div class="card beach-img d-none">
+                <div class="img-cont9 exp-img hov-eff">
+                </div>
+                <p class="name">Siargao</p>
+            </div>
+            <div class="card nature-img d-none">
+                <div class="img-cont10 exp-img hov-eff">
+                </div>
+                <p class="name">Bohol</p>
+            </div>
+            <div class="card nature-img d-none">
+                <div class="img-cont11 exp-img hov-eff">
+                </div>
+                <p class="name">Siargao</p>
+            </div>
+            <div class="card city-img d-none">
+                <div class="img-cont12 exp-img hov-eff">
+                </div>
+                <p class="name">Manila</p>
+            </div>
+            <div class="card city-img d-none">
+                <div class="img-cont13 exp-img hov-eff">
+                </div>
+                <p class="name">Palawan</p>
+            </div>
+            <div class="card cultural-img d-none">
+                <div class="img-cont14 exp-img hov-eff">
+                </div>
+                <p class="name">Manila</p>
+            </div>
+            <div class="card cultural-img d-none">
+                <div class="img-cont15 exp-img hov-eff">
+                </div>
+                <p class="name">Cebu</p>
+            </div>
+        </div>
     </div>
-  </div>
-  <hr>
+    <hr>
 
-  <div class="top-dest">
-    <div class="cont">
-      <p class="dest-text">Top Destinations</p>
-      <button id="viewall-btn">View All Destinations</button>
+    <div class="top-dest">
+        <div class="cont">
+            <p class="dest-text">Top Destinations</p>
+            <button id="viewall-btn">View All Destinations</button>
+        </div>
+        <div class="top-cards">
+            <div class="top-card1 exp-img hov-img"></div>
+            <div class="top-card2 exp-img hov-img"></div>
+            <div class="top-card3 exp-img hov-img"></div>
+            <div class="top-card4 exp-img hov-img"></div>
+            <div class="top-card5 exp-img hov-img"></div>
+            <div class="top-card6 exp-img hov-img"></div>
+        </div>
     </div>
-    <div class="top-cards">
-      <div class="top-card1 exp-img hov-img"></div>
-      <div class="top-card2 exp-img hov-img"></div>
-      <div class="top-card3 exp-img hov-img"></div>
-      <div class="top-card4 exp-img hov-img"></div>
-      <div class="top-card5 exp-img hov-img"></div>
-      <div class="top-card6 exp-img hov-img"></div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="travspo-des">
-      <p class="trav">TravSpo</p>
-      <p class="trav-des">Your guide to exploring the beautiful Philippines</p>
-    </div>
-    <div class="explore">
-      <p class="ex-des">Explore</p>
-      <ul class="exp-ul">
-        <li class="exp-li">
-          <a href="destinations.html" class="exp-a">Destinations</a>
-        </li>
-        <li class="exp-li">
-          <a href="itineraries.html" class="exp-a">Itineraries</a>
-        </li>
-        <li class="exp-li">
-          <a href="gallery.html" class="exp-a">Gallery</a>
-        </li>
-        <li class="exp-li">
-          <a href="travel_tips.html" class="exp-a">Travel Tips</a>
-        </li>
-      </ul>
-    </div>
-    <div class="resources">
-      <p class="res-des">Resources</p>
-      <ul class="exp-ul">
-        <li class="exp-li">
-          <a href="#" class="exp-a">Travel Guide</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">Blog</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">FAQ</a>
-        </li>
-      </ul>
-    </div>
-    <div class="connect">
-      <p class="conn-des">Connect</p>
-      <ul class="exp-ul">
-        <li class="exp-li">
-          <a href="#" class="exp-a">Instagram</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">Facebook</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">Twitter</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <footer>
+        <div class="travspo-des">
+            <p class="trav">TravSpo</p>
+            <p class="trav-des">You guide to exploring the beautiful Philippines</p>
+        </div>
+        <div class="explore">
+            <p class="ex-des">Explore</p>
+            <ul class="exp-ul">
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Destinations</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Itineraries</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Gallery</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Travel Tips</a>
+                </li>
+            </ul>
+        </div>
+        <div class="resources">
+            <p class="res-des">Resources</p>
+            <ul class="exp-ul">
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Travel Guide</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Blog</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="connect">
+            <p class="conn-des">Connect</p>
+            <ul class="exp-ul">
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Instagram</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Facebook</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
-  <script src="js/apps.js"></script>
+    
+    <script src="../js/index.js"></script>
 </body>
-
 </html>

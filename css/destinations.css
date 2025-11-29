@@ -45,6 +45,9 @@ header{
     color: black;
     font-size: 1em;
 }
+.a-head:hover{
+    color: blue;
+}
 .a-nav:active{
     font-weight: 600;
 }
@@ -65,10 +68,17 @@ footer{
 }
 .exp-li{
     margin: 0 0 0.8em 0;
+    display: flex;
 }
 .exp-a{
     text-decoration: none;
     color: black;
+    min-width: 40%;
+    transition: 0.2s ease-in;
+}
+.exp-a:hover{
+    transform: translateX(2%);
+    color: blue;
 }
 .trav, .ex-des, .res-des, .conn-des{
     font-weight: 600;
@@ -106,6 +116,7 @@ footer{
 .des-btn:hover{
     background-color: black;
     color: white;
+    transform: scale(1.05);
 }
 .des-cards{
     margin: 1.5em 0;
@@ -115,7 +126,7 @@ footer{
     gap: 1.2em;
 }
 
-.des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8{
+.des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8, .des-img9, .des-img10, .des-img11, .des-img12, .des-img13, .des-img14, .des-img15{
     height: 30vh;
     background-color: #eee;
     border-radius: 0.7em;
@@ -144,6 +155,27 @@ footer{
 }
 .des-img8{
     background-image: url(../img/Vigan\ tour.jpg);
+}
+.des-img9{
+    background-image: url(../img/Palawan\ city.jpg);
+}
+.des-img10{
+    background-image: url(../img/palm\ tree\ rope\ swing\ in\ siargao.jpg);
+}
+.des-img11{
+    background-image: url(../img/Manila\ Rizal\ Park.jpg)
+}
+.des-img12{
+    background-image: url(../img/Cebu\ mactan.webp);
+}
+.des-img13{
+    background-image: url(../img/Casino\ Peak\ Hike\ In\ Cebu.jpg);
+}
+.des-img14{
+    background-image: url(../img/mount\ luho\ in\ boracay.jpg)
+}
+.des-img15{
+    background-image: url(../img/mount-darala\ in\ palawan.jpg);
 }
 .des-name{
     font-weight: 600;
@@ -176,6 +208,7 @@ footer{
 #srch-btn:hover{
     background-color: blue;
     color: white;
+    transform: translateY(-5%);
 }
 .exp-img{
     background-position: center;
@@ -185,6 +218,7 @@ footer{
 }
 .exp-img:hover{
     transform: translateY(-5%);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.7);
 }
 .spec{
     background-color: black;
@@ -193,4 +227,10 @@ footer{
 .des-foc:focus{
     background-color: black;
     color: white;
+}
+.remove-img{
+    display: none;
+}
+.d-none{
+    display: none;
 }
