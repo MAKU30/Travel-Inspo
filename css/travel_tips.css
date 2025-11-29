@@ -44,6 +44,10 @@ header{
     padding: 0 0 0 1.5em;
     color: black;
     font-size: 1em;
+    transition: 0.2s ease-in;
+}
+.a-head:hover{
+    color: blue;
 }
 .a-nav:active{
     font-weight: 600;
@@ -65,10 +69,17 @@ footer{
 }
 .exp-li{
     margin: 0 0 0.8em 0;
+    display: flex;
 }
 .exp-a{
     text-decoration: none;
     color: black;
+    min-width: 40%;
+    transition: 0.2s ease-in;
+}
+.exp-a:hover{
+    transform: translateX(2%);
+    color: blue;
 }
 .trav, .ex-des, .res-des, .conn-des{
     font-weight: 600;
@@ -139,6 +150,12 @@ hr{
     display: flex;
     border-radius: 0.6em;
     border: 1px solid lightgray;
+    transition: 0.2s ease-in;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.tip-cards:hover{
+    transform: translateY(-5%);
+    box-shadow: 0 10px 10px rgba(0, 0, 255, 0.986);
 }
 .icon-cont{
     height: 7vh;

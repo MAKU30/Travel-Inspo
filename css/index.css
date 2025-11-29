@@ -32,6 +32,7 @@ header{
     margin: 0;
     font-size: 1.8em;
     cursor: pointer;
+    transition: 0.2s ease-in;
 }
 .spo-blue{
     color: blue;
@@ -56,6 +57,10 @@ header{
     padding: 0 0 0 1.5em;
     color: black;
     font-size: 1em;
+    transition: 0.2s ease-in;
+}
+.a-head:hover{
+    color: blue;
 }
 .a-nav:active{
     font-weight: 600;
@@ -140,6 +145,7 @@ header{
 }
 #explore-btn:hover{
     background-color: black;
+    transform: translateY(-5%);
     color: white;
 }
 .show-destination{
@@ -150,6 +156,11 @@ header{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     gap: 1.5em;   
+}
+
+.hover-img:hover{
+    transform: translateY(-5%);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
 }
 .img1{
     grid-row: span 2;
@@ -184,7 +195,7 @@ hr{
     font-size: 1.3em;
     font-weight: 600;
 }
-.des-btn{
+.cat-btn{
     font-size: 0.8em;
     padding: 0.7em 1.1em;
     margin: 0 0.7em 0 0;
@@ -195,19 +206,19 @@ hr{
     transition: 0.2s ease-in;
     cursor: pointer;
 }
-.des-btn:hover{
-    background-color: black;
+.cat-btn:hover{
+    background-color: blue;
     color: white;
+    transform: scale(1.05);
 }
 .spec{
     background-color: black;
     color: white;
 }
-.des-foc:focus{
-    background-color: black;
+.cat-foc:focus{
+    background-color: blue;
     color: white;
 }
-
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -216,11 +227,15 @@ hr{
 .card{
     margin: 1.5em 0 0 0;
 }
-.img-cont1, .img-cont2, .img-cont3, .img-cont4{
+.hov-eff:hover{
+    transform: scale(1.05);
+     box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+}
+.img-cont1, .img-cont2, .img-cont3, .img-cont4, .img-cont5, .img-cont6, .img-cont7, .img-cont8, .img-cont9, .img-cont10, .img-cont11, .img-cont12, .img-cont13, .img-cont14, .img-cont15{
     height: 30vh;
     background-color: #eee;
     border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
 }
 .img-cont1{
     background-image: url(../img/Palawan\ Island\ 3.jpg);
@@ -233,6 +248,39 @@ hr{
 }
 .img-cont4{
     background-image: url(../img/Boracay\ Beach.jpg);
+}
+.img-cont5{
+    background-image: url(../img/Vigan\ City\ 1.jpg);
+}
+.img-cont6{
+    background-image: url(../img/Casino\ Peak\ Hike\ In\ Cebu.jpg);
+}
+.img-cont7{
+    background-image: url(../img/mount\ luho\ in\ boracay.jpg);
+}
+.img-cont8{
+    background-image: url(../img/mount-darala\ in\ palawan.jpg);
+}
+.img-cont9{
+    background-image: url(../img/Siargao\ Island\ 1.jpg);
+}
+.img-cont10{
+    background-image: url(../img/Bohol\ Sea\ of\ Clouds\ \(Mt.\ Puntaas\).jpg);
+}
+.img-cont11{
+    background-image: url(../img/palm\ tree\ rope\ swing\ in\ siargao.jpg);
+}
+.img-cont12{
+    background-image: url(../img/Manila\ Rizal\ Park.jpg);
+}
+.img-cont13{
+    background-image: url(../img/Palawan\ city.jpg);
+}
+.img-cont14{
+    background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
+}
+.img-cont15{
+    background-image: url(../img/Cebu\ mactan.webp);
 }
 .top-dest{
     padding: 3em 10.1em;
@@ -263,7 +311,7 @@ hr{
 .top-card1, .top-card2, .top-card3, .top-card4, .top-card5, .top-card6{
     background-color: #eee;
     border-radius: 0.5em;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
 }
 .top-card1{
     background-image: url(../img/El\ Nido\ Palawan\ \,\ PH\(1\).jpg);
@@ -296,19 +344,30 @@ footer{
 }
 .exp-li{
     margin: 0 0 0.8em 0;
+    display: flex;
 }
 .exp-a{
     text-decoration: none;
     color: black;
+    min-width: 40%;
+    transition: 0.2s ease-in;
+}
+.exp-a:hover{
+    transform: translateX(2%);
+    color: blue;
 }
 .trav, .ex-des, .res-des, .conn-des{
     font-weight: 600;
     font-size: 1.1em;
 }
 .hov-img:hover{
-    transform: translateY(15%);
+    transform: translateY(-5%);
+    box-shadow: 0 10px 7px rgba(0,0,0,0.7);
 }
 .btn-foc{
     background-color: black;
     color: white;
+}
+.d-none{
+    display: none;
 }

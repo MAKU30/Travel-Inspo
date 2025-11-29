@@ -45,6 +45,9 @@ header{
     color: black;
     font-size: 1em;
 }
+.a-head:hover{
+    color: blue;
+}
 .a-nav:active{
     font-weight: 600;
 }
@@ -65,10 +68,17 @@ footer{
 }
 .exp-li{
     margin: 0 0 0.8em 0;
+    display: flex;
 }
 .exp-a{
     text-decoration: none;
     color: black;
+    min-width: 40%;
+    transition: 0.2s ease-in;
+}
+.exp-a:hover{
+    transform: translateX(2%);
+    color: blue;
 }
 .trav, .ex-des, .res-des, .conn-des{
     font-weight: 600;
@@ -108,6 +118,7 @@ footer{
 .des-btn:hover{
     background-color: black;
     color: white;
+    transform: scale(1.05);
 }
 hr{
     width: 85%;
@@ -199,6 +210,13 @@ hr{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 0.2s ease-in;
+}
+.day-num:hover{
+    background-color: blue;
+    color: white;
+    transform: translateY(-5%);
+    cursor: default;
 }
 .d{
     margin: 0 0 0.5em 0;
@@ -264,4 +282,6 @@ hr{
 #srch-btn:hover{
     background-color: blue;
     color: white;
+    transform: translateY(-5%);
 }
+
