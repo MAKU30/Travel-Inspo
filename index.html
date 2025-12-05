@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>TravSpo - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
 </head>
 <body>
     <header>
         <h1 class="title">Trav<span class="spo-blue">Spo</span> 
         </h1>
-
-    <ul class="nav">
-      <li class="home-li nav-li">
-        <a href="index.html" id="home-a" class="a-head">Home</a>
-      </li>
-      <li class="dest-li nav-li">
-        <a href="./html_files/destinations.html" id="dest-a" class="a-head">Destination</a>
-      </li>
-      <li class="iti-li nav-li">
-        <a href="./html_files/itineraries.html" id="iti-a" class="a-head">Itineraries</a>
-      </li>
-      <li class="gal-li nav-li">
-        <a href="./html_files/gallery.html" id="gal-a" class="a-head">Gallery</a>
-      </li>
-      <li class="trav-li nav-li">
-        <a href="./html_files/travel_tips.html" id="trav-a" class="a-head">Travel Tips</a>
-      </li>
-      <li class="search-li nav-li">
-        <a href="#" id="search-a" class="a-head s"><i class="fa-solid fa-magnifying-glass"></i></a>
-      </li>
-    </ul>
-  </header>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass s-hide"></i>
+            <input type="text" class="user-inp" placeholder="Search destination...">
+        </div>
+        <ul class="nav">
+            <li class="home-li nav-li">
+                <a href="index.html" id="home-a" class="a-head">Home</a>
+            </li>
+            <li class="dest-li nav-li">
+                <a href="./html_files/destinations.html" id="dest-a" class="a-head">Destination</a>
+            </li>
+            <li class="iti-li nav-li">
+                <a href="./html_files/itineraries.html" id="iti-a" class="a-head">Itineraries</a>
+            </li>
+            <li class="gal-li nav-li">
+                <a href="./html_files/gallery.html" id="gal-a" class="a-head">Gallery</a>
+            </li>
+            <li class="trav-li nav-li">
+                <a href="./html_files/travel_tips.html" id="trav-a" class="a-head">Travel Tips</a>
+            </li>
+            <li class="search-li nav-li">
+                <a href="" id="trav-a" class="a-head s"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+        </ul>
+    </header>
 
     <div class="explore-sec">
         <div class="exp-images1 exp-img">
@@ -55,9 +58,34 @@
     </div>
 
     <div class="show-destination">
-        <div class="img1 exp-img hover-img"></div>
-        <div class="img2 exp-img hover-img"></div>
-        <div class="img3 exp-img hover-img"></div>
+        <div class="dest-card1">
+            <div class="img1 exp-img hover-img">
+            </div>
+            <div class="des-sm">
+                <p class="loc-name">Calle Crisologo(Vigan)</p>
+                <p class="loc">Vigan City, Ilocos Sur, Luzon</p>
+                <p class="loc-des">A UNESCO World Heritage Site, Calle Crisologo is a Wonderfully preserved Spanish-colonial street dating back to the 16th century. It features cobblestone streets lined with ancestral houses featuring unique Filipino-Hispanic architecture. It offers a nostalgic, romantic atmosphere, especially at night when it;s illuminated by lanterns and traversed only by horse-drawn carriages(kalesas)</p>
+            </div>
+        </div>
+        <div class="dest-card2">
+            <div class="img2 exp-img hover-img">
+            </div>
+            <div class="des-sm">
+                <p class="loc-name">Chocolate Hills(Bohol)</p>
+                <p class="loc">Bohol Island, Visayas</p>
+                <p class="loc-des">A geological monument consisting of over 1,700 symmetrical, cone-shaped hills spread across a vast plains area. the hills are covered in green grass during the wet season but turn a distinct chocolate-brown color during the dry season.</p>
+            </div>
+        </div>
+        <div class="dest-card3">
+            <div class="img3 exp-img hover-img">
+            </div>
+            <div class="des-sm">
+                <p class="loc-name">Sugba Lagoon(Siargao)</p>
+                <p class="loc">Del Carmen, Siargao Island, Mindanao</p>
+                <p class="loc-des">A breathtaking marine sanctuary known for its crystal-clear, turquoise-green waterss surrounded by lush mangrove forests and limestone karsts. It is a premier eco-tourism spot ideal for gentle water activities like stand-up paddleboarding, kayaking, and swimming.</p>
+            </div>
+        </div>
+            
     </div>
     <hr>
 
@@ -73,78 +101,123 @@
             <div class="card beach-img">
                 <div class="img-cont1 exp-img hov-eff">
                 </div>
-                <p class="name">Palawan</p>
+                <div class="tp-cont">
+                    <p class="name">Palawan</p>
+                    <p class="tp-des">Often Called the "Last Frontier",this province is renowed for its dramatic, towering limestone cliffs, hidden coves, and cystal clear turquoise lagoons.</p>
+                </div>
             </div>
             <div class="card nature-img">
                 <div class="img-cont2 exp-img hov-eff">
                 </div>
-                <p class="name">Banaue</p>
+                <div class="tp-cont">
+                    <p class="name">Banaue</p>
+                    <p class="tp-des">The Majestic Banaue Rice Terraces are a UNESCO World Heritage Site that locals Often call the "Eight Wonder of the World".</p>
+                </div>
             </div>
             <div class="card city-img">
                 <div class="img-cont3 exp-img hov-eff">
                 </div>
-                <p class="name">Cebu</p>
+                <div class="tp-cont">
+                    <p class="name">Cebu</p>
+                    <p class="tp-des">Known as the "Queen City of the South". Cebu is the oldest city in the Philippines, showcasing the country's deep colonial and religous heritage.</p>
+                </div>
             </div>
             <div class="card beach-img">
                 <div class="img-cont4 exp-img hov-eff">
                 </div>
-                <p class="name">Boracay</p>
+                <div class="tp-cont">
+                    <p class="name">Boracay</p>
+                    <p class="tp-des">A Small island famous globally for its White beach, a four-kilometer stretch of sand so fine and white it resembles powdered sugar.</p>
+                </div>
             </div>
             <!--D-none-->
             <div class="card cultural-img d-none">
                 <div class="img-cont5 exp-img hov-eff">
                 </div>
-                <p class="name">Vigan City</p>
+                <div class="tp-cont">
+                    <p class="name">Vigan City</p>
+                    <p class="tp-des">A UNESCO World Heritage Site famous for its well-preserved Spanish colonial houses, cobblestone streets, and horse-drawn kalesa.</p>
+                </div>
             </div>
             <div class="card adventure-img d-none">
                 <div class="img-cont6 exp-img hov-eff">
                 </div>
-                <p class="name">Cebu</p>
+                <div class="tp-cont">
+                    <p class="name">Cebu</p>
+                    <p class="tp-des">Casino Peak, located in Dalaguete, Cebu, is a scenic mountain known for its unique jagged limestone formations making it a popular spot for lanscape photography.</p>
+                </div>
             </div>
             <div class="card adventure-img d-none">
                 <div class="img-cont7 exp-img hov-eff">
                 </div>
-                <p class="name">Boracay</p>
+                <div class="tp-cont">
+                    <p class="name">Boracay</p>
+                    <p class="tp-des">Mount Luho is the highest viewpoint in Boracay, offering a panoramic view of the island's turquoise waters, and white beaches perfect for photography.</p>
+                </div>
             </div>
             <div class="card adventure-img d-none">
                 <div class="img-cont8 exp-img hov-eff">
                 </div>
-                <p class="name">Palawan</p>
+                <div class="tp-cont">
+                    <p class="name">Palawan</p>
+                    <p class="tp-des">Mount Darala sits on Busuanga Island in northern Palawan, Tourist are rewarded with beautiful panoramic views of surrounding islands and breathtaking sea.</p>
+                </div>
             </div>
             <div class="card beach-img d-none">
                 <div class="img-cont9 exp-img hov-eff">
                 </div>
-                <p class="name">Siargao</p>
+                <div class="tp-cont">
+                    <p class="name">Siargao</p>
+                    <p class="tp-des">A teardrop-shaped island hailed as the surfing Capital of the Philippines. Siargao charms visitors with island-hopping, adventures, and enchanting lagoons.</p>
+                </div>
             </div>
             <div class="card nature-img d-none">
                 <div class="img-cont10 exp-img hov-eff">
                 </div>
-                <p class="name">Bohol</p>
+                <div class="tp-cont">
+                    <p class="name">Bohol</p>
+                    <p class="tp-des">The Sea of Clouds in Bohol, often seen in the hills of Danao or Sagbayan, offers a breathtaking view of thick white clouds rolling over the landscapes at sunrise.</p>
+                </div>
             </div>
             <div class="card nature-img d-none">
                 <div class="img-cont11 exp-img hov-eff">
                 </div>
-                <p class="name">Siargao</p>
+                <div class="tp-cont">
+                    <p class="name">Siargao</p>
+                    <p class="tp-des">located along Maasin River, is a popular spot where visitos swing from a leaning coconut tree over emerald-green water surrounded by lush jungle scenery.</p>
+                </div>
             </div>
             <div class="card city-img d-none">
                 <div class="img-cont12 exp-img hov-eff">
                 </div>
-                <p class="name">Manila</p>
+                <div class="tp-cont">
+                    <p class="name">Manila</p>
+                    <p class="tp-des">Rizal Park, also known as Luneta Park, is a historic urban park in manila dedicated to the national hero Dr. Jose Rizal. it is one of the most popular spot for leisure.</p>
+                </div>
             </div>
             <div class="card city-img d-none">
                 <div class="img-cont13 exp-img hov-eff">
                 </div>
-                <p class="name">Palawan</p>
+                <div class="tp-cont">
+                    <p class="name">Palawan</p>
+                    <p class="tp-des">Known for its pristine beaches, crystal-clear waters, and lush natural landscapes. it is home to the world-famous Underground River.</p>
+                </div>
             </div>
             <div class="card cultural-img d-none">
                 <div class="img-cont14 exp-img hov-eff">
                 </div>
-                <p class="name">Manila</p>
+                <div class="tp-cont">
+                    <p class="name">Manila</p>
+                    <p class="tp-des">The Quiapo Church, Officially the Minor Basillica of the Black Nazarene, It is a historic Catholic church known for its miraculous Black Nazarene statue.</p>
+                </div>
             </div>
             <div class="card cultural-img d-none">
                 <div class="img-cont15 exp-img hov-eff">
                 </div>
-                <p class="name">Cebu</p>
+                <div class="tp-cont">
+                    <p class="name">Cebu</p>
+                    <p class="tp-des">The Mactan Shrine in Cebu features the iconic Lapu-Lapu statue, honoring the native hero who defeated Ferdinand Magellan in the Battle of Mactan.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -156,66 +229,90 @@
             <button id="viewall-btn">View All Destinations</button>
         </div>
         <div class="top-cards">
-            <div class="top-card1 exp-img hov-img"></div>
-            <div class="top-card2 exp-img hov-img"></div>
-            <div class="top-card3 exp-img hov-img"></div>
-            <div class="top-card4 exp-img hov-img"></div>
-            <div class="top-card5 exp-img hov-img"></div>
-            <div class="top-card6 exp-img hov-img"></div>
+            <div class="top-card">
+                <div class="top-card1 exp-img hov-img"></div>
+                <div class="top-des">
+                    <p class="top-name">Palawan</p>
+                </div>
+            </div>
+            <div class="top-card">
+                <div class="top-card2 exp-img hov-img"></div>
+                <div class="top-des">
+                    <p class="top-name">Bohol</p>
+                </div>
+            </div>
+            <div class="top-card">
+                <div class="top-card3 exp-img hov-img"></div>
+                <div class="top-des">
+                    <p class="top-name">Siargao</p>
+                </div>
+            </div>
+            <div class="top-card">
+                <div class="top-card4 exp-img hov-img"></div>
+                <div class="top-des">
+                    <p class="top-name">Manila</p>
+                </div>
+            </div>
+            <div class="top-card">
+                <div class="top-card5 exp-img hov-img"></div>
+                <div class="top-des">
+                    <p class="top-name">Cebu</p>
+                </div>
+            </div>
         </div>
     </div>
 
-  <footer>
-    <div class="travspo-des">
-      <p class="trav">TravSpo</p>
-      <p class="trav-des">Your guide to exploring the beautiful Philippines</p>
-    </div>
-    <div class="explore">
-      <p class="ex-des">Explore</p>
-      <ul class="exp-ul">
-        <li class="exp-li">
-          <a href="./html_files/destinations.html" class="exp-a">Destinations</a>
-        </li>
-        <li class="exp-li">
-          <a href="./html_files/itineraries.html" class="exp-a">Itineraries</a>
-        </li>
-        <li class="exp-li">
-          <a href="./html_files/gallery.html" class="exp-a">Gallery</a>
-        </li>
-        <li class="exp-li">
-          <a href="./html_files/travel_tips.html" class="exp-a">Travel Tips</a>
-        </li>
-      </ul>
-    </div>
-    <div class="resources">
-      <p class="res-des">Resources</p>
-      <ul class="exp-ul">
-        <li class="exp-li">
-          <a href="#" class="exp-a">Travel Guide</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">Blog</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">FAQ</a>
-        </li>
-      </ul>
-    </div>
-    <div class="connect">
-      <p class="conn-des">Connect</p>
-      <ul class="exp-ul">
-        <li class="exp-li">
-          <a href="#" class="exp-a">Instagram</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">Facebook</a>
-        </li>
-        <li class="exp-li">
-          <a href="#" class="exp-a">Twitter</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <footer>
+        <div class="travspo-des">
+            <p class="trav">TravSpo</p>
+            <p class="trav-des">Your guide to exploring the beautiful Philippines</p>
+        </div>
+        <div class="explore">
+            <p class="ex-des">Explore</p>
+            <ul class="exp-ul">
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Destinations</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Itineraries</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Gallery</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Travel Tips</a>
+                </li>
+            </ul>
+        </div>
+        <div class="resources">
+            <p class="res-des">Resources</p>
+            <ul class="exp-ul">
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Travel Guide</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Blog</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="connect">
+            <p class="conn-des">Connect</p>
+            <ul class="exp-ul">
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Instagram</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Facebook</a>
+                </li>
+                <li class="exp-li">
+                    <a href="#" class="exp-a">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     
     <script src="./js/index.js"></script>

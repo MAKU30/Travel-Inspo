@@ -5,6 +5,7 @@ body{
     padding: 4.5em 0 0 0;
     margin: 0;
     position: relative;
+    cursor: default;
 }
 header{
     display: flex;
@@ -31,6 +32,7 @@ header{
     justify-content: flex-end;
     list-style: none;
     margin: 0;
+    padding-left: 0;
 }
 .nav-li{
     height: 4.5em;
@@ -145,7 +147,7 @@ footer{
     background-image: url(../img/Manila\ Philippines.jpg);
 }
 .des-img5{
-    background-image: url(../img/Cebu\ mactan.webp);
+    background-image: url(../img/Cebu\ Magellan’s\ Cross.jpg);
 }
 .des-img6{
     background-image: url(../img/Cloud\ 9\ Siargao\ Beach.jpg);
@@ -157,25 +159,25 @@ footer{
     background-image: url(../img/Vigan\ tour.jpg);
 }
 .des-img9{
-    background-image: url(../img/Palawan\ city.jpg);
+    background-image: url(../img/Palawan\ Island\ 2.jpg);
 }
 .des-img10{
-    background-image: url(../img/palm\ tree\ rope\ swing\ in\ siargao.jpg);
+    background-image: url(../img/Siargao\ Island\ 1.jpg);
 }
 .des-img11{
-    background-image: url(../img/Manila\ Rizal\ Park.jpg)
+    background-image: url(../img/Manila\ Rizal\ Park.jpg);
 }
 .des-img12{
     background-image: url(../img/Cebu\ mactan.webp);
 }
 .des-img13{
-    background-image: url(../img/Casino\ Peak\ Hike\ In\ Cebu.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 1.jpg);
 }
 .des-img14{
-    background-image: url(../img/mount\ luho\ in\ boracay.jpg)
+    background-image: url(../img/Boracay\ Beach.jpg);
 }
 .des-img15{
-    background-image: url(../img/mount-darala\ in\ palawan.jpg);
+    background-image: url(../img/Palawan\ Island\ 3.jpg);
 }
 .des-name{
     font-weight: 600;
@@ -233,4 +235,145 @@ footer{
 }
 .d-none{
     display: none;
+}
+.search-box{
+    margin-left: 4em;
+    flex: 1;
+    text-align: end;
+    position: relative;
+}
+.user-inp{
+    min-width: 100%;
+    height: 3em;
+    border-radius: 1.7em;
+    outline: none;
+    padding-left: 3.3em;
+    border: 1px solid grey;
+}
+.s-hide{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    header {
+        padding: 0 3em;
+    }
+    .dest-intro {
+        padding: 1.5em 3em;
+    }
+    .all-des {
+        padding: 2em 3em;
+    }
+    .search-des {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .search-box {
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 1.5em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        flex: none;
+    }
+    .user-inp {
+        width: 100%;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-li {
+        height: 3.5em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
+    }
+    body {
+        padding: 6em 0 0 0;
+    }
+    .dest-intro {
+        padding: 1.5em 1.5em;
+    }
+    .dest-cat {
+        font-size: 1.5em;
+    }
+    .all-des {
+        padding: 1.5em 1.5em;
+    }
+    .des-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1em;
+        margin: 0.3em;
+    }
+    .des-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+    }
+    .des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8, .des-img9, .des-img10, .des-img11, .des-img12, .des-img13, .des-img14, .des-img15 {
+        height: 25vh;
+    }
+    .search-des {
+        padding: 1.5em 1.5em;
+    }
+    footer {
+        padding: 1.5em 1.5em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 1em;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-li {
+        width: 100%;
+        height: 3em;
+    }
+    .a-head {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    body {
+        padding: 8em 0 0 0;
+    }
+    .des-cards {
+        grid-template-columns: 1fr;
+    }
+    .des-btn {
+        font-size: 0.8em;
+        padding: 0.5em 0.8em;
+    }
 }

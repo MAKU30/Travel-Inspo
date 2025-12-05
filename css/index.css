@@ -5,17 +5,7 @@ body{
     padding: 4.5em 0 0 0;
     margin: 0;
     position: relative;
-}
-header{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    padding: 0 11em;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1000;
+    cursor: default;
 }
 header{
     display: flex;
@@ -44,6 +34,7 @@ header{
     list-style: none;
     margin: 0;
     position: relative;
+    padding-left: 0;
 }
 .nav-li{
     height: 4.5em;
@@ -148,38 +139,54 @@ header{
     transform: translateY(-5%);
     color: white;
 }
+
+.hover-img:hover{
+    transform: translateY(-3%);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+}
+
 .show-destination{
     min-height: 85vh;
     margin: 0 0 3em 0;
     padding: 1em 11em;
+    gap: 1.8em;   
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
-    gap: 1.5em;   
 }
-
-.hover-img:hover{
-    transform: translateY(-5%);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+.dest-card1{
+    grid-row: span 2;
+}
+.img1, .img2, .img3{
+    border-radius: 0.5em;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
 }
 .img1{
-    grid-row: span 2;
-    height: 60vh;
-    background-color: #eee;
-    border-radius: 0.5em;
     background-image: url(../img/Vigan\ City\ 1.jpg);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
-}
-.img2, .img3{
-    background-color: #eee;
-    border-radius: 0.5em; 
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);  
+    min-height: 76vh;
 }
 .img2{
     background-image: url(../img/Bohol\ 1\ .jpg);
+    min-height:35vh;
 }
 .img3{
     background-image: url(../img/Siargao\ Island\ 3.jpg);
+    min-height: 35vh;
+}
+.des-sm{
+    margin-top: 1em;
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    border-radius: 0.6em;
+}
+.loc-name{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 0;
+}
+.loc-des{
+    text-align: justify;
+    line-height: 1.3em;
 }
 hr{
     width: 85%;
@@ -228,8 +235,21 @@ hr{
     margin: 1.5em 0 0 0;
 }
 .hov-eff:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
      box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+}
+.tp-des{
+    background-color: lightgray;
+    font-size: 0.9em;
+    padding: 0.7em;
+    margin-top: 0.5em;
+    text-align: justify;
+    border-radius: 0.5em;
+    line-height: 1.3em;
+}
+.name{
+    margin-bottom: 0;
+    font-weight: 600;
 }
 .img-cont1, .img-cont2, .img-cont3, .img-cont4, .img-cont5, .img-cont6, .img-cont7, .img-cont8, .img-cont9, .img-cont10, .img-cont11, .img-cont12, .img-cont13, .img-cont14, .img-cont15{
     height: 30vh;
@@ -253,28 +273,28 @@ hr{
     background-image: url(../img/Vigan\ City\ 1.jpg);
 }
 .img-cont6{
-    background-image: url(../img/Casino\ Peak\ Hike\ In\ Cebu.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 1.jpg);
 }
 .img-cont7{
-    background-image: url(../img/mount\ luho\ in\ boracay.jpg);
+    background-image: url(../img/Boracay\ Beach.jpg);
 }
 .img-cont8{
-    background-image: url(../img/mount-darala\ in\ palawan.jpg);
+    background-image: url(../img/Palawan\ Island\ 1.jpg);
 }
 .img-cont9{
     background-image: url(../img/Siargao\ Island\ 1.jpg);
 }
 .img-cont10{
-    background-image: url(../img/Bohol\ Sea\ of\ Clouds\ \(Mt.\ Puntaas\).jpg);
+    background-image: url(../img/Bohol\ 1\ .jpg);
 }
 .img-cont11{
-    background-image: url(../img/palm\ tree\ rope\ swing\ in\ siargao.jpg);
+    background-image: url(../img/Siargao\ Island\ 2.jpg);
 }
 .img-cont12{
     background-image: url(../img/Manila\ Rizal\ Park.jpg);
 }
 .img-cont13{
-    background-image: url(../img/Palawan\ city.jpg);
+    background-image: url(../img/Palawan\ Island\ 2.jpg);
 }
 .img-cont14{
     background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
@@ -302,13 +322,19 @@ hr{
     font-size: 1.3em;
     font-weight: 600;
 }
+.top-name{
+    font-weight: 600;
+}
 .top-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 25vh;
     gap: 0.9em;
+}.top-card{
+    background-color: antiquewhite;
 }
 .top-card1, .top-card2, .top-card3, .top-card4, .top-card5, .top-card6{
+    height: 28vh;
     background-color: #eee;
     border-radius: 0.5em;
     box-shadow: 0 10px 10px rgba(0,0,0,0.4);
@@ -320,16 +346,13 @@ hr{
     background-image: url(../img/Bohol\ 2\ .jpg);
 }
 .top-card3{
-    background-image: url(../img/CLOUD\ 9\ Siargao\ Beach\ 1.avif);
+    background-image: url(../img/Siargao\ Island\ 2.jpg);
 }
 .top-card4{
     background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
 }
 .top-card5{
-    background-image: url(../img/Palawan\ Island\ 2.jpg);
-}
-.top-card6{
-    background-image: url(../img/Siargao\ Island\ 2.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 2.jpg);
 }
 footer{
     border-top: 1px solid lightgray;
@@ -370,4 +393,176 @@ footer{
 }
 .d-none{
     display: none;
+}
+.search-box{
+    margin-left: 4em;
+    flex: 1;
+    text-align: end;
+    position: relative;
+}
+.user-inp{
+    min-width: 100%;
+    height: 3em;
+    border-radius: 1.7em;
+    outline: none;
+    padding-left: 3.3em;
+    border: 1px solid grey;
+}
+.s-hide{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    header {
+        padding: 0 3em;
+    }
+    .explore-sec {
+        padding: 2em 3em;
+    }
+    .show-destination {
+        padding: 2em 3em;
+    }
+    .category-sec {
+        padding: 2em 3em;
+    }
+    .top-dest {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .search-box {
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 1.5em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        flex: none;
+    }
+    .user-inp {
+        width: 100%;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-li {
+        height: 3.5em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
+    }
+    body {
+        padding: 6em 0 0 0;
+    }
+    .explore-sec {
+        padding: 1.5em 1.5em;
+        min-height: 50vh;
+    }
+    .exp-des {
+        font-size: 1.8em;
+    }
+    .disc-des {
+        font-size: 1em;
+    }
+    .show-destination {
+        padding: 1.5em 1.5em;
+    }
+    .dest-card1, .dest-card2, .dest-card3 {
+        flex-direction: column;
+    }
+    .img1, .img2, .img3 {
+        width: 100%;
+        height: 25vh;
+    }
+    .des-sm {
+        width: 100%;
+        padding: 1em 0 0 0;
+    }
+    .category-sec {
+        padding: 1.5em 1.5em;
+    }
+    .exp-cat {
+        font-size: 1.5em;
+    }
+    .cat-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1em;
+        margin: 0.3em;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+    .top-dest {
+        padding: 1.5em 1.5em;
+    }
+    .top-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+    footer {
+        padding: 1.5em 1.5em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 1em;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-li {
+        width: 100%;
+        height: 3em;
+    }
+    .a-head {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    body {
+        padding: 8em 0 0 0;
+    }
+    .exp-des {
+        font-size: 1.5em;
+    }
+    .disc-des {
+        font-size: 0.9em;
+    }
+    .top-cards {
+        grid-template-columns: 1fr;
+    }
+    .cat-btn {
+        font-size: 0.8em;
+        padding: 0.5em 0.8em;
+    }
 }
