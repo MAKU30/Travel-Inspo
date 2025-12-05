@@ -5,6 +5,7 @@ body{
     padding: 4.5em 0 0 0;
     margin: 0;
     position: relative;
+    cursor: default;
 }
 header{
     display: flex;
@@ -31,6 +32,7 @@ header{
     justify-content: flex-end;
     list-style: none;
     margin: 0;
+    padding-left: 0;
 }
 .nav-li{
     height: 4.5em;
@@ -284,4 +286,139 @@ hr{
     color: white;
     transform: translateY(-5%);
 }
+.search-box{
+    margin-left: 4em;
+    flex: 1;
+    text-align: end;
+    position: relative;
+}
+.user-inp{
+    min-width: 100%;
+    height: 3em;
+    border-radius: 1.7em;
+    outline: none;
+    padding-left: 3.3em;
+    border: 1px solid grey;
+}
+.s-hide{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    header {
+        padding: 0 3em;
+    }
+    .iti-intro {
+        padding: 1.5em 3em;
+    }
+    .iti-cont {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .search-box {
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 1.5em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        flex: none;
+    }
+    .user-inp {
+        width: 100%;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-li {
+        height: 3.5em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
+    }
+    body {
+        padding: 6em 0 0 0;
+    }
+    .iti-intro {
+        padding: 1.5em 1.5em;
+    }
+    .dest-cat {
+        font-size: 1.5em;
+    }
+    .iti-cont {
+        padding: 1.5em 1.5em;
+    }
+    .iti-card {
+        flex-direction: column;
+    }
+    .iti-img {
+        width: 100%;
+        height: 30vh;
+    }
+    .iti-des {
+        width: 100%;
+        padding: 1em 0 0 0;
+    }
+    footer {
+        padding: 1.5em 1.5em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 1em;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-li {
+        width: 100%;
+        height: 3em;
+    }
+    .a-head {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    body {
+        padding: 8em 0 0 0;
+    }
+    .day-title {
+        font-size: 1.2em;
+    }
+    .act-name {
+        font-size: 1em;
+    }
+    .act-des {
+        font-size: 0.9em;
+    }
+}
