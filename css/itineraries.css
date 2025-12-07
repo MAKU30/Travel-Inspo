@@ -529,42 +529,63 @@ hr{
     }
 }
 
+/* Enhanced date-info layout */
 .date-info{
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
-    align-items: center;
-
-}
+    align-items: flex-start;
+    padding: 1.3em 1.5em;
+} 
 
 .iti-dur{
-    flex-grow: 3;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-}
-
-.highlights-daytoday{
-    flex-grow: 3;
-}
-.highlights{
-    flex-grow: 1;
-}
-.best-month{
-    flex-grow: 1;
+    flex: 3;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-    gap:8px;
+    justify-content: flex-start;
+    padding: 0;
+    min-width: 0; /* Prevents flex item overflow */
+}
+
+.highlights-daytoday{
+    flex: 1;
+}
+
+.highlights{
+    flex: 1;
+}
+
+.best-month{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    min-width: 150px; /* Prevents shrinking too much */
+    margin-top: 0; /* Align with other elements */
+}
+
+.best-month-title{
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.best-month-des{
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .duration{
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: start;
-    justify-content: start;
-}
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+} 
