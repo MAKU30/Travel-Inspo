@@ -43,9 +43,10 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 1.5em;
+    padding: 0 1em;
     color: black;
     font-size: 1em;
+    transition: 0.2s ease-in;
 }
 .a-head:hover{
     color: blue;
@@ -146,10 +147,11 @@ hr{
     margin-bottom: 3.5em;
 }
 .iti-dur{
-    padding: 1em 0 0 1.5em;
+    padding: 0; /* Padding now handled by parent .date-info */
     flex: 1;
 }
 .day-des{
+    margin-top: 0;
     margin-bottom: 0.6em;
 }
 .duration{
@@ -159,11 +161,18 @@ hr{
     margin: 0 2em 0 0;
 }
 .diff-cont{
-    margin: 1em 1.5em 0 0;
+    margin: 0;
+    padding: 0;
     text-align: end;
+    flex: 1;
+    min-width: 120px; /* Prevents shrinking too much */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .diff{
     margin-bottom: 0.6em;
+    margin-top: 0;
 }
 .iti-diff{
     margin-top: 0;

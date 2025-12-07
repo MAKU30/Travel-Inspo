@@ -43,9 +43,10 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 1.5em;
+    padding: 0 1em;
     color: black;
     font-size: 1em;
+    transition: 0.2s ease-in;
 }
 .a-head:hover{
     color: blue;
