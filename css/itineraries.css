@@ -519,3 +519,43 @@ hr{
         font-size: 0.9em;
     }
 }
+
+.date-info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.iti-dur{
+    flex-grow: 3;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.highlights-daytoday{
+    flex-grow: 3;
+}
+.highlights{
+    flex-grow: 1;
+}
+.best-month{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px;
+}
+
+.duration{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: start;
+    justify-content: start;
+}
