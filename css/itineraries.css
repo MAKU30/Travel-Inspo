@@ -540,12 +540,7 @@ hr{
     
 }
 
-/* .highlights-daytoday{
-    flex-grow: 3;
-}
-.highlights{
-    flex-grow: 1;
-} */
+
 .best-month{
     flex-grow: 1;
     display: flex;
