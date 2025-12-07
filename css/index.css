@@ -154,6 +154,10 @@ header{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
 }
+.dest-card1, .dest-card2, .dest-card3 {
+    display: flex;
+    flex-direction: column;
+}
 .dest-card1{
     grid-row: span 2;
 }
@@ -172,6 +176,22 @@ header{
 .img3{
     background-image: url(../img/Siargao\ Island\ 3.jpg);
     min-height: 35vh;
+}
+
+/* Responsive adjustments for show-destination images */
+@media (max-width: 1024px) {
+    .img1 {
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        min-height: 30vh;
+    }
+    .img2, .img3 {
+        min-height: 25vh;
+    }
 }
 .des-sm{
     margin-top: 1em;
@@ -418,15 +438,73 @@ footer{
 }
 
 /* Responsive Styles */
+@media (min-width: 1045px) and (max-width: 1500px) {
+    header {
+        padding: 0 4em;
+        flex-wrap: nowrap;
+    }
+    .title {
+        flex: 0 0 auto;
+        margin-right: 2em;
+    }
+    .search-box {
+        flex: 1 1 auto;
+        margin-left: 2em;
+        margin-right: 2em;
+        min-width: 200px;
+        max-width: 400px;
+    }
+    .nav {
+        flex: 0 1 auto;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    .nav-li {
+        flex: 0 0 auto;
+    }
+    .a-head {
+        font-size: 0.95em;
+        padding: 0 1em;
+        white-space: nowrap;
+    }
+}
+
 @media (max-width: 1024px) {
     header {
-        padding: 0 3em;
+        padding: 0 2em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.6em;
+        margin-right: 1em;
+    }
+    .search-box {
+        margin-left: 1em;
+        flex: 0 1 auto;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-li {
+        height: 4em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
     }
     .explore-sec {
         padding: 2em 3em;
     }
     .show-destination {
         padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+    }
+    .dest-card1 {
+        grid-row: span 1;
     }
     .category-sec {
         padding: 2em 3em;
@@ -439,69 +517,148 @@ footer{
         grid-template-columns: 1fr 1fr;
         gap: 2em;
     }
-    .search-box {
-        margin-left: 2em;
-    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     header {
         padding: 0 1.5em;
-        flex-wrap: wrap;
-    }
-    .title {
-        font-size: 1.5em;
     }
     .search-box {
         order: 3;
         width: 100%;
         margin: 0.5em 0 0 0;
-        flex: none;
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .nav {
+        order: 2;
+        flex: 1 1 100%;
+        justify-content: flex-start;
+        margin-top: 0.5em;
+    }
+    .nav-li {
+        height: 3.8em;
+    }
+    .a-head {
+        font-size: 0.85em;
+        padding: 0 0.7em;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    header {
+        padding: 0 1em;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .title {
+        font-size: 1.4em;
+        flex: 1;
+    }
+    .search-box {
+        display: none !important;
     }
     .user-inp {
         width: 100%;
     }
     .nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         width: 100%;
+        padding: 0;
+        z-index: 1000;
+        margin-top: 0;
+    }
+    .nav.active {
+        display: flex;
     }
     .nav-li {
+        width: 100%;
         height: 3.5em;
+        border-bottom: 1px solid #eee;
     }
     .a-head {
-        font-size: 0.9em;
-        padding: 0 0.8em;
+        font-size: 1em;
+        padding: 0 1.5em;
+        width: 100%;
+        justify-content: flex-start;
     }
     body {
-        padding: 6em 0 0 0;
+        padding: 4.5em 0 0 0;
     }
     .explore-sec {
-        padding: 1.5em 1.5em;
-        min-height: 50vh;
+        padding: 1.5em 1em;
+        min-height: auto;
     }
     .exp-des {
-        font-size: 1.8em;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
     }
     .disc-des {
-        font-size: 1em;
+        font-size: 0.95em;
+        margin-bottom: 1em;
+    }
+    #explore-btn {
+        padding: 0.8em 1.5em;
+        font-size: 0.95em;
+        min-height: 44px;
+        touch-action: manipulation;
     }
     .show-destination {
-        padding: 1.5em 1.5em;
+        padding: 1.5em 1em;
+        gap: 1.5em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: auto;
+    }
+    .dest-card1 {
+        grid-row: span 1;
     }
     .dest-card1, .dest-card2, .dest-card3 {
+        display: flex;
         flex-direction: column;
+        gap: 0;
+        width: 100%;
     }
     .img1, .img2, .img3 {
         width: 100%;
         height: 25vh;
+        min-height: 200px;
     }
     .des-sm {
         width: 100%;
         padding: 1em 0 0 0;
     }
+    .loc-name {
+        font-size: 1.2em;
+    }
+    .loc-des {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
     .category-sec {
-        padding: 1.5em 1.5em;
+        padding: 1.5em 1em;
     }
     .exp-cat {
         font-size: 1.5em;
@@ -531,26 +688,19 @@ footer{
 
 @media (max-width: 480px) {
     header {
-        padding: 0 1em;
+        padding: 0 0.8em;
     }
     .title {
+        font-size: 1.2em;
+    }
+    .menu-toggle {
         font-size: 1.3em;
-    }
-    .nav {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .nav-li {
-        width: 100%;
-        height: 3em;
-    }
-    .a-head {
-        width: 100%;
-        justify-content: center;
-        padding: 0;
+        padding: 0.4em;
+        min-width: 44px;
+        min-height: 44px;
     }
     body {
-        padding: 8em 0 0 0;
+        padding: 4.5em 0 0 0;
     }
     .exp-des {
         font-size: 1.5em;
@@ -563,6 +713,23 @@ footer{
     }
     .cat-btn {
         font-size: 0.8em;
-        padding: 0.5em 0.8em;
+        padding: 0.7em 1em;
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    button {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .a-head {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    img, .exp-img {
+        max-width: 100%;
+        height: auto;
+    }
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0.1);
     }
 }
