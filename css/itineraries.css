@@ -149,11 +149,10 @@ hr{
     margin-bottom: 3.5em;
 }
 .iti-dur{
-    padding: 0; /* Padding now handled by parent .date-info */
+    padding: 1em 0 0 1.5em;
     flex: 1;
 }
 .day-des{
-    margin-top: 0;
     margin-bottom: 0.6em;
 }
 .duration{
@@ -163,18 +162,11 @@ hr{
     margin: 0 2em 0 0;
 }
 .diff-cont{
-    margin: 0;
-    padding: 0;
+    margin: 1em 1.5em 0 0;
     text-align: end;
-    flex: 1;
-    min-width: 120px; /* Prevents shrinking too much */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 .diff{
     margin-bottom: 0.6em;
-    margin-top: 0;
 }
 .iti-diff{
     margin-top: 0;
@@ -299,7 +291,6 @@ hr{
 }
 .search-box{
     margin-left: 4em;
-    margin-right: 3em;
     flex: 1;
     text-align: end;
     position: relative;
@@ -334,7 +325,7 @@ hr{
     .search-box {
         flex: 1 1 auto;
         margin-left: 2em;
-        margin-right: 2.5em;
+        margin-right: 2em;
         min-width: 200px;
         max-width: 400px;
     }
@@ -364,7 +355,6 @@ hr{
     }
     .search-box {
         margin-left: 1em;
-        margin-right: 2em;
         flex: 0 1 auto;
         min-width: 200px;
         max-width: 300px;
@@ -551,14 +541,6 @@ hr{
     min-width: 0; /* Prevents flex item overflow */
 }
 
-.highlights-daytoday{
-    flex: 1;
-}
-
-.highlights{
-    flex: 1;
-}
-
 .best-month{
     flex: 1;
     display: flex;
@@ -589,7 +571,6 @@ hr{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 0.5em;
-} 
+    align-items: start;
+    justify-content: start;
+}
