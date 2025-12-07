@@ -5,6 +5,7 @@ body{
     padding: 4.5em 0 0 0;
     margin: 0;
     position: relative;
+    cursor: default;
 }
 header{
     display: flex;
@@ -31,6 +32,9 @@ header{
     justify-content: flex-end;
     list-style: none;
     margin: 0;
+    position: relative;
+    padding-left: 1em;
+    gap: 0.5em;
 }
 .nav-li{
     height: 4.5em;
@@ -41,9 +45,10 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 1.5em;
+    padding: 0 1em;
     color: black;
     font-size: 1em;
+    transition: 0.2s ease-in;
 }
 .a-head:hover{
     color: blue;
@@ -145,7 +150,7 @@ footer{
     background-image: url(../img/Manila\ Philippines.jpg);
 }
 .des-img5{
-    background-image: url(../img/Cebu\ mactan.webp);
+    background-image: url(../img/Cebu\ Magellan’s\ Cross.jpg);
 }
 .des-img6{
     background-image: url(../img/Cloud\ 9\ Siargao\ Beach.jpg);
@@ -157,25 +162,25 @@ footer{
     background-image: url(../img/Vigan\ tour.jpg);
 }
 .des-img9{
-    background-image: url(../img/Palawan\ city.jpg);
+    background-image: url(../img/Palawan\ Island\ 2.jpg);
 }
 .des-img10{
-    background-image: url(../img/palm\ tree\ rope\ swing\ in\ siargao.jpg);
+    background-image: url(../img/Siargao\ Island\ 1.jpg);
 }
 .des-img11{
-    background-image: url(../img/Manila\ Rizal\ Park.jpg)
+    background-image: url(../img/Manila\ Rizal\ Park.jpg);
 }
 .des-img12{
     background-image: url(../img/Cebu\ mactan.webp);
 }
 .des-img13{
-    background-image: url(../img/Casino\ Peak\ Hike\ In\ Cebu.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 1.jpg);
 }
 .des-img14{
-    background-image: url(../img/mount\ luho\ in\ boracay.jpg)
+    background-image: url(../img/Boracay\ Beach.jpg);
 }
 .des-img15{
-    background-image: url(../img/mount-darala\ in\ palawan.jpg);
+    background-image: url(../img/Palawan\ Island\ 3.jpg);
 }
 .des-name{
     font-weight: 600;
@@ -233,4 +238,244 @@ footer{
 }
 .d-none{
     display: none;
+}
+.search-box{
+    margin-left: 4em;
+    margin-right: 3em;
+    flex: 1;
+    text-align: end;
+    position: relative;
+}
+.user-inp{
+    min-width: 100%;
+    height: 3em;
+    border-radius: 1.7em;
+    outline: none;
+    padding-left: 3.3em;
+    border: 1px solid grey;
+}
+.s-hide{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (min-width: 1045px) and (max-width: 1500px) {
+    header {
+        padding: 0 4em;
+        flex-wrap: nowrap;
+    }
+    .title {
+        flex: 0 0 auto;
+        margin-right: 2em;
+    }
+    .search-box {
+        flex: 1 1 auto;
+        margin-left: 2em;
+        margin-right: 2.5em;
+        min-width: 200px;
+        max-width: 400px;
+    }
+    .nav {
+        flex: 0 1 auto;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    .nav-li {
+        flex: 0 0 auto;
+    }
+    .a-head {
+        font-size: 0.95em;
+        padding: 0 1em;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0 2em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.6em;
+        margin-right: 1em;
+    }
+    .search-box {
+        margin-left: 1em;
+        margin-right: 2em;
+        flex: 0 1 auto;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-li {
+        height: 4em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
+    }
+    .dest-intro {
+        padding: 1.5em 3em;
+    }
+    .all-des {
+        padding: 2em 3em;
+    }
+    .search-des {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 1.5em;
+    }
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .nav {
+        order: 2;
+        flex: 1 1 100%;
+        justify-content: flex-start;
+        margin-top: 0.5em;
+    }
+    .nav-li {
+        height: 3.8em;
+    }
+    .a-head {
+        font-size: 0.85em;
+        padding: 0 0.7em;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    header {
+        padding: 0 1em;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .title {
+        font-size: 1.4em;
+        flex: 1;
+    }
+    .search-box {
+        display: none !important;
+    }
+    .user-inp {
+        width: 100%;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        margin-top: 0;
+    }
+    .nav.active {
+        display: flex;
+    }
+    .nav-li {
+        width: 100%;
+        height: 3.5em;
+        border-bottom: 1px solid #eee;
+    }
+    .a-head {
+        font-size: 1em;
+        padding: 0 1.5em;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    body {
+        padding: 4.5em 0 0 0;
+    }
+    .dest-intro {
+        padding: 1.5em 1.5em;
+    }
+    .dest-cat {
+        font-size: 1.5em;
+    }
+    .all-des {
+        padding: 1.5em 1.5em;
+    }
+    .des-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1em;
+        margin: 0.3em;
+    }
+    .des-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+    }
+    .des-img1, .des-img2, .des-img3, .des-img4, .des-img5, .des-img6, .des-img7, .des-img8, .des-img9, .des-img10, .des-img11, .des-img12, .des-img13, .des-img14, .des-img15 {
+        height: 25vh;
+    }
+    .search-des {
+        padding: 1.5em 1.5em;
+    }
+    footer {
+        padding: 1.5em 1.5em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 0.8em;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .menu-toggle {
+        font-size: 1.3em;
+        padding: 0.4em;
+    }
+    body {
+        padding: 4.5em 0 0 0;
+    }
+    .des-cards {
+        grid-template-columns: 1fr;
+    }
+    .des-btn {
+        font-size: 0.8em;
+        padding: 0.5em 0.8em;
+    }
 }

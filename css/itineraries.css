@@ -5,6 +5,7 @@ body{
     padding: 4.5em 0 0 0;
     margin: 0;
     position: relative;
+    cursor: default;
 }
 header{
     display: flex;
@@ -31,6 +32,9 @@ header{
     justify-content: flex-end;
     list-style: none;
     margin: 0;
+    position: relative;
+    padding-left: 1em;
+    gap: 0.5em;
 }
 .nav-li{
     height: 4.5em;
@@ -41,9 +45,10 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 1.5em;
+    padding: 0 1em;
     color: black;
     font-size: 1em;
+    transition: 0.2s ease-in;
 }
 .a-head:hover{
     color: blue;
@@ -144,10 +149,11 @@ hr{
     margin-bottom: 3.5em;
 }
 .iti-dur{
-    padding: 1em 0 0 1.5em;
+    padding: 0; /* Padding now handled by parent .date-info */
     flex: 1;
 }
 .day-des{
+    margin-top: 0;
     margin-bottom: 0.6em;
 }
 .duration{
@@ -157,11 +163,18 @@ hr{
     margin: 0 2em 0 0;
 }
 .diff-cont{
-    margin: 1em 1.5em 0 0;
+    margin: 0;
+    padding: 0;
     text-align: end;
+    flex: 1;
+    min-width: 120px; /* Prevents shrinking too much */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .diff{
     margin-bottom: 0.6em;
+    margin-top: 0;
 }
 .iti-diff{
     margin-top: 0;
@@ -284,4 +297,298 @@ hr{
     color: white;
     transform: translateY(-5%);
 }
+.search-box{
+    margin-left: 4em;
+    margin-right: 3em;
+    flex: 1;
+    text-align: end;
+    position: relative;
+}
+.user-inp{
+    min-width: 100%;
+    height: 3em;
+    border-radius: 1.7em;
+    outline: none;
+    padding-left: 3.3em;
+    border: 1px solid grey;
+}
+.s-hide{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
 
+/* Responsive Styles */
+@media (min-width: 1045px) and (max-width: 1500px) {
+    header {
+        padding: 0 4em;
+        flex-wrap: nowrap;
+    }
+    .title {
+        flex: 0 0 auto;
+        margin-right: 2em;
+    }
+    .search-box {
+        flex: 1 1 auto;
+        margin-left: 2em;
+        margin-right: 2.5em;
+        min-width: 200px;
+        max-width: 400px;
+    }
+    .nav {
+        flex: 0 1 auto;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    .nav-li {
+        flex: 0 0 auto;
+    }
+    .a-head {
+        font-size: 0.95em;
+        padding: 0 1em;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0 2em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.6em;
+        margin-right: 1em;
+    }
+    .search-box {
+        margin-left: 1em;
+        flex: 0 1 auto;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-li {
+        height: 4em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
+    }
+    .iti-intro {
+        padding: 1.5em 3em;
+    }
+    .iti-cont {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 1.5em;
+    }
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .nav {
+        order: 2;
+        flex: 1 1 100%;
+        justify-content: flex-start;
+        margin-top: 0.5em;
+    }
+    .nav-li {
+        height: 3.8em;
+    }
+    .a-head {
+        font-size: 0.85em;
+        padding: 0 0.7em;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    header {
+        padding: 0 1em;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .title {
+        font-size: 1.4em;
+        flex: 1;
+    }
+    .search-box {
+        display: none !important;
+    }
+    .user-inp {
+        width: 100%;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        margin-top: 0;
+    }
+    .nav.active {
+        display: flex;
+    }
+    .nav-li {
+        width: 100%;
+        height: 3.5em;
+        border-bottom: 1px solid #eee;
+    }
+    .a-head {
+        font-size: 1em;
+        padding: 0 1.5em;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    body {
+        padding: 4.5em 0 0 0;
+    }
+    .iti-intro {
+        padding: 1.5em 1.5em;
+    }
+    .dest-cat {
+        font-size: 1.5em;
+    }
+    .iti-cont {
+        padding: 1.5em 1.5em;
+    }
+    .iti-card {
+        flex-direction: column;
+    }
+    .iti-img {
+        width: 100%;
+        height: 30vh;
+    }
+    .iti-des {
+        width: 100%;
+        padding: 1em 0 0 0;
+    }
+    footer {
+        padding: 1.5em 1.5em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 0.8em;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .menu-toggle {
+        font-size: 1.3em;
+        padding: 0.4em;
+    }
+    body {
+        padding: 4.5em 0 0 0;
+    }
+    .day-title {
+        font-size: 1.2em;
+    }
+    .act-name {
+        font-size: 1em;
+    }
+    .act-des {
+        font-size: 0.9em;
+    }
+}
+
+/* Enhanced date-info layout */
+.date-info{
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 1.3em 1.5em;
+} 
+
+.iti-dur{
+    flex: 3;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    min-width: 0; /* Prevents flex item overflow */
+}
+
+.highlights-daytoday{
+    flex: 1;
+}
+
+.highlights{
+    flex: 1;
+}
+
+.best-month{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    min-width: 150px; /* Prevents shrinking too much */
+    margin-top: 0; /* Align with other elements */
+}
+
+.best-month-title{
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.best-month-des{
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.duration{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+} 

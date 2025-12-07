@@ -1,445 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/itineraries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/itineraries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 class="title">Trav<span class="spo-blue">Spo</span> 
-        </h1>
-
-        <ul class="nav">
-            <li class="home-li nav-li">
-                <a href="/index.html" id="home-a" class="a-head">Home</a>
-            </li>
-            <li class="dest-li nav-li">
-                <a href="destinations.html" id="dest-a" class="a-head">Destination</a>
-            </li>
-            <li class="iti-li nav-li">
-                <a href="itineraries.html" id="iti-a" class="a-head">Itineraries</a>
-            </li>
-            <li class="gal-li nav-li">
-                <a href="gallery.html" id="gal-a" class="a-head">Gallery</a>
-            </li>
-            <li class="trav-li nav-li">
-                <a href="travel_tips.html" id="trav-a" class="a-head">Travel Tips</a>
-            </li>
-            <li class="search-li nav-li">
-                <a href="" id="trav-a" class="a-head s"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </li>
-        </ul>
+      <h1 class="title">Trav<span class="spo-blue">Spo</span></h1>
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass s-hide"></i>
+        <input
+          type="text"
+          class="user-inp"
+          placeholder="Search destination..."
+        />
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav" id="nav-menu">
+        <li class="home-li nav-li">
+          <a href="../index.html" id="home-a" class="a-head">Home</a>
+        </li>
+          <li class="dest-li nav-li">
+           <a href="./destinations.html" id="dest-a" class="a-head">Destination</a>
+          </li>
+          <li class="iti-li nav-li">
+           <a href="./itineraries.html" id="iti-a" class="a-head">Itineraries</a>
+          </li>
+          <li class="gal-li nav-li">
+           <a href="./gallery.html" id="gal-a" class="a-head">Gallery</a>
+          </li>
+          <li class="trav-li nav-li">
+           <a href="./travel_tips.html" id="trav-a" class="a-head">Travel Tips</a>
+          </li>
+      
+      </ul>
     </header>
 
     <div class="dest-intro">
-        <p class="dest-cat">Sample Itineraries</p>
-        <p class="sm-des">Carefully crafted travel plans to help you make the most of your Philippines adventure</p>
+      <p class="dest-cat">Sample Itineraries</p>
+      <p class="sm-des">
+        Carefully crafted travel plans to help you make the most of your
+        Philippines adventure
+      </p>
     </div>
-    
+
     <div class="schedule">
-        <button class="des-btn spec all-btn">All Itineraries</button>
-        <button class="des-btn t-f">3-5 Days</button>
-        <button class="des-btn s-s">6-7 Days</button>
-        <button class="des-btn e-plus">8+ Days</button>
+      <button class="des-btn spec all-btn">All Itineraries</button>
+      <button class="des-btn t-f">3-5 Days</button>
+      <button class="des-btn s-s">6-7 Days</button>
+      <button class="des-btn e-plus">8+ Days</button>
     </div>
-    <hr>
+    <hr />
 
     <div class="iti-cont">
-        <!--container for iti-->
-        <div class="iti-box all-iti sev-day">
-            <div class="date-info">
-                <div class="iti-dur">
-                    <p class="day-des">7 Days Palawan Island Hopping</p>
-                    <p class="duration">
-                        <span class="iti-days">
-                            7 Days / 6 Nights
-                        </span>
-                        <span class="iti-des">
-                            El Nido, Coron, Puerto Princesa
-                        </span>
-                        <span class="iti-tags">
-                            Beach Lovers, Adventure
-                        </span>
-                    </p>
-                </div>
-                <div class="diff-cont">
-                    <p class="diff">Difficulty</p>
-                    <p class="iti-diff">Moderate</p>
-                </div>
-            </div>
-            <div class="highlights-daytoday">
-                <div class="highlights">
-                    <p class="high-title">Highlights</p>
-                    <ul class="iti-ul">
-                        <li class="iti-li"><span class="dot">.</span>Explore hidden lagoons and secret beaches</li>
-                        <li class="iti-li"><span class="dot">.</span>Snorkeling in crystal waters</li>
-                        <li class="iti-li"><span class="dot">.</span>Underground river tour</li>
-                        <li class="iti-li"><span class="dot">.</span>Island hopping tours A,B,C, and D</li>
-                    </ul>
-                </div>
-
-                <div class="daytoday">
-                    <p class="day-title">Day to Day</p>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">1</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Arrival in Puerto Princesa</p>
-                            <p class="plan">Arrive at Puerto Princesa check-in-to hotel, city tour</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">2</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Underground River Tour</p>
-                            <p class="plan">Full day tour to the Puerto Princesa Underground River</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">3</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Transfer to El Nido</p>
-                            <p class="plan">5-hour scenic drive to El Nido, beach time</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">4</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Island Hopping Tour A</p>
-                            <p class="plan">Visit Big Lagoon, Small Lagoon, Secret Lagoon, Shimizu Island</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">5</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Island Hopping Tour C</p>
-                            <p class="plan">Hidden Beach, Matinloc Shrine, Helicopter Island, Talisay Beach</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">6</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Free Day in El Nido</p>
-                            <p class="plan">Explore town, optional activities, beach relaxation</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">7</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Departure</p>
-                            <p class="plan">Transfer back to Puerto Princesa for departure flight</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="others">
-                <button class="des-btn">View Destinations</button>
-                <button class="des-btn">Download PDF</button>
-                <button class="des-btn">Customize</button>
-            </div>
+      <!--container for iti-->
+      <div class="iti-box all-iti sev-day">
+        <div class="date-info">
+          <div class="iti-dur">
+            <p class="day-des">7 Days Palawan Island Hopping</p>
+            <p class="duration">
+              <span class="iti-days"> 7 Days / 6 Nights </span>
+              <span class="iti-des"> El Nido, Coron, Puerto Princesa </span>
+              <span class="iti-tags"> Beach Lovers, Adventure </span>
+            </p>
+          </div>
+          <div class="best-month">
+            <div class="best-month-title">Best Month To Go</div>
+            <div class="best-month-des">December</div>
+          </div>
+          <div class="diff-cont">
+            <p class="diff">Difficulty</p>
+            <p class="iti-diff">Moderate</p>
+          </div>
         </div>
+        <div class="highlights-daytoday">
+          <div class="highlights">
+            <p class="high-title">Highlights</p>
+            <ul class="iti-ul">
+              <li class="iti-li">
+                <span class="dot">.</span>Explore hidden lagoons and secret
+                beaches
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Snorkeling in crystal waters
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Underground river tour
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Island hopping tours A,B,C, and D
+              </li>
+            </ul>
+          </div>
 
-        <!--container for iti-->
-        <div class="iti-box all-iti fiv-day">
-            <div class="date-info">
-                <div class="iti-dur">
-                    <p class="day-des">5 Days Manila & Tagaytay Cultural Tour</p>
-                    <p class="duration">
-                        <span class="iti-days">
-                            5 Days / 4 Nights
-                        </span>
-                        <span class="iti-des">
-                            Manila, Tagaytay, Taal
-                        </span>
-                        <span class="iti-tags">
-                            Culture, History, Food
-                        </span>
-                    </p>
-                </div>
-                <div class="diff-cont">
-                    <p class="diff">Difficulty</p>
-                    <p class="iti-diff">Easy</p>
-                </div>
+          <div class="daytoday">
+            <p class="day-title">Day to Day</p>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">1</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Arrival in Puerto Princesa</p>
+                <p class="plan">
+                  Arrive at Puerto Princesa check-in-to hotel, city tour
+                </p>
+              </div>
             </div>
-            <div class="highlights-daytoday">
-                <div class="highlights">
-                    <p class="high-title">Highlights</p>
-                    <ul class="iti-ul">
-                        <li class="iti-li"><span class="dot">.</span>Historic Intramuros walking tour</li>
-                        <li class="iti-li"><span class="dot">.</span>Taal Volcano day trip</li>
-                        <li class="iti-li"><span class="dot">.</span>Filipino cooking class</li>
-                        <li class="iti-li"><span class="dot">.</span>National Museum visits</li>
-                    </ul>
-                </div>
-
-                <div class="daytoday">
-                    <p class="day-title">Day to Day</p>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">1</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Arrival in Manila</p>
-                            <p class="plan">Check-in, evening walk in Rizal Park</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">2</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Old Manila Tour</p>
-                            <p class="plan">Intramuros, Fort Santiago, San Agustin Church, Manila Cathedral</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">3</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Museums and Modern Manila</p>
-                            <p class="plan">National Museums, Bonifacio Global City, shopping</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">4</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Tagaytay & Taal Volcano</p>
-                            <p class="plan">Day trip to Tagaytay, Taal Volcano boat tour, local restaurants</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">5</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Shopping & Departure</p>
-                            <p class="plan">Last-minute shopping, departure</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">2</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Underground River Tour</p>
+                <p class="plan">
+                  Full day tour to the Puerto Princesa Underground River
+                </p>
+              </div>
             </div>
-            <div class="others">
-                <button class="des-btn">View Destinations</button>
-                <button class="des-btn">Download PDF</button>
-                <button class="des-btn">Customize</button>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">3</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Transfer to El Nido</p>
+                <p class="plan">5-hour scenic drive to El Nido, beach time</p>
+              </div>
             </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">4</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Island Hopping Tour A</p>
+                <p class="plan">
+                  Visit Big Lagoon, Small Lagoon, Secret Lagoon, Shimizu Island
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">5</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Island Hopping Tour C</p>
+                <p class="plan">
+                  Hidden Beach, Matinloc Shrine, Helicopter Island, Talisay
+                  Beach
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">6</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Free Day in El Nido</p>
+                <p class="plan">
+                  Explore town, optional activities, beach relaxation
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">7</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Departure</p>
+                <p class="plan">
+                  Transfer back to Puerto Princesa for departure flight
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="iti-box all-iti eight-day">
-            <div class="date-info">
-                <div class="iti-dur">
-                    <p class="day-des">8 Days Palawan Island Hopping</p>
-                    <p class="duration">
-                        <span class="iti-days">
-                            8 Days / 7 Nights
-                        </span>
-                        <span class="iti-des">
-                            El Nido, Coron, Puerto Princesa
-                        </span>
-                        <span class="iti-tags">
-                            Beach Lovers, Adventure
-                        </span>
-                    </p>
-                </div>
-                <div class="diff-cont">
-                    <p class="diff">Difficulty</p>
-                    <p class="iti-diff">Moderate</p>
-                </div>
-            </div>
-            <div class="highlights-daytoday">
-                <div class="highlights">
-                    <p class="high-title">Highlights</p>
-                    <ul class="iti-ul">
-                        <li class="iti-li"><span class="dot">.</span>Explore hidden lagoons and secret beaches</li>
-                        <li class="iti-li"><span class="dot">.</span>Snorkeling in crystal waters</li>
-                        <li class="iti-li"><span class="dot">.</span>Underground river tour</li>
-                        <li class="iti-li"><span class="dot">.</span>Island hopping tours A,B,C, and D</li>
-                    </ul>
-                </div>
-
-                <div class="daytoday">
-                    <p class="day-title">Day to Day</p>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">1</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Arrival in Puerto Princesa</p>
-                            <p class="plan">Arrive at Puerto Princesa check-in-to hotel, city tour</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">2</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Underground River Tour</p>
-                            <p class="plan">Full day tour to the Puerto Princesa Underground River</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">3</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Transfer to El Nido</p>
-                            <p class="plan">5-hour scenic drive to El Nido, beach time</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">4</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Island Hopping Tour A</p>
-                            <p class="plan">Visit Big Lagoon, Small Lagoon, Secret Lagoon, Shimizu Island</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">5</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Island Hopping Tour C</p>
-                            <p class="plan">Hidden Beach, Matinloc Shrine, Helicopter Island, Talisay Beach</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">6</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Free Day in El Nido</p>
-                            <p class="plan">Explore town, optional activities, beach relaxation</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">7</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Departure</p>
-                            <p class="plan">Transfer back to Puerto Princesa for departure flight</p>
-                        </div>
-                    </div>
-                    <div class="day-plan">
-                        <div class="day-num">
-                            <p class="d">Day</p>
-                            <p class="num">8</p>
-                        </div>
-                        <div class="sched-plan">
-                            <p class="sched">Departure</p>
-                            <p class="plan">Transfer back to Puerto Princesa for departure flight</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="others">
-                <button class="des-btn">View Destinations</button>
-                <button class="des-btn">Download PDF</button>
-                <button class="des-btn">Customize</button>
-            </div>
+        <div class="others">
+          <button class="des-btn">View Destinations</button>
+          <button class="des-btn">Download PDF</button>
+          <button class="des-btn">Customize</button>
         </div>
+      </div>
+
+      <!--container for iti-->
+      <div class="iti-box all-iti fiv-day">
+        <div class="date-info">
+          <div class="iti-dur">
+            <p class="day-des">5 Days Manila & Tagaytay Cultural Tour</p>
+            <p class="duration">
+              <span class="iti-days"> 5 Days / 4 Nights </span>
+              <span class="iti-des"> Manila, Tagaytay, Taal </span>
+              <span class="iti-tags"> Culture, History, Food </span>
+            </p>
+          </div>
+          <div class="best-month">
+            <div class="best-month-title">Best Month To Go</div>
+            <div class="best-month-des">December - January - February</div>
+          </div>
+          <div class="diff-cont">
+            <p class="diff">Difficulty</p>
+            <p class="iti-diff">Easy</p>
+          </div>
+        </div>
+        <div class="highlights-daytoday">
+          <div class="highlights">
+            <p class="high-title">Highlights</p>
+            <ul class="iti-ul">
+              <li class="iti-li">
+                <span class="dot">.</span>Historic Intramuros walking tour
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Taal Volcano day trip
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Filipino cooking class
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>National Museum visits
+              </li>
+            </ul>
+          </div>
+
+          <div class="daytoday">
+            <p class="day-title">Day to Day</p>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">1</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Arrival in Manila</p>
+                <p class="plan">Check-in, evening walk in Rizal Park</p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">2</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Old Manila Tour</p>
+                <p class="plan">
+                  Intramuros, Fort Santiago, San Agustin Church, Manila
+                  Cathedral
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">3</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Museums and Modern Manila</p>
+                <p class="plan">
+                  National Museums, Bonifacio Global City, shopping
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">4</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Tagaytay & Taal Volcano</p>
+                <p class="plan">
+                  Day trip to Tagaytay, Taal Volcano boat tour, local
+                  restaurants
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">5</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Shopping & Departure</p>
+                <p class="plan">Last-minute shopping, departure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="others">
+          <button class="des-btn">View Destinations</button>
+          <button class="des-btn">Download PDF</button>
+          <button class="des-btn">Customize</button>
+        </div>
+      </div>
+
+      <div class="iti-box all-iti eight-day">
+        <div class="date-info">
+          <div class="iti-dur">
+            <div class="day-des">8 Days Palawan Island Hopping</div>
+            <div class="duration">
+              <span class="iti-days"> 8 Days / 7 Nights </span>
+              <span class="iti-des"> El Nido, Coron, Puerto Princesa </span>
+              <span class="iti-tags"> Beach Lovers, Adventure </span>
+            </div>
+          </div>
+          <div class="best-month">
+            <div class="best-month-title">Best Month To Go</div>
+            <div class="best-month-des">December - January - February</div>
+          </div>
+          <div class="diff-cont">
+            <p class="diff">Difficulty</p>
+            <p class="iti-diff">Moderate</p>
+          </div>
+        </div>
+        <div class="highlights-daytoday">
+          <div class="highlights">
+            <p class="high-title">Highlights</p>
+            <ul class="iti-ul">
+              <li class="iti-li">
+                <span class="dot">.</span>Explore hidden lagoons and secret
+                beaches
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Snorkeling in crystal waters
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Underground river tour
+              </li>
+              <li class="iti-li">
+                <span class="dot">.</span>Island hopping tours A,B,C, and D
+              </li>
+            </ul>
+          </div>
+
+          <div class="daytoday">
+            <p class="day-title">Day to Day</p>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">1</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Arrival in Puerto Princesa</p>
+                <p class="plan">
+                  Arrive at Puerto Princesa check-in-to hotel, city tour
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">2</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Underground River Tour</p>
+                <p class="plan">
+                  Full day tour to the Puerto Princesa Underground River
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">3</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Transfer to El Nido</p>
+                <p class="plan">5-hour scenic drive to El Nido, beach time</p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">4</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Island Hopping Tour A</p>
+                <p class="plan">
+                  Visit Big Lagoon, Small Lagoon, Secret Lagoon, Shimizu Island
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">5</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Island Hopping Tour C</p>
+                <p class="plan">
+                  Hidden Beach, Matinloc Shrine, Helicopter Island, Talisay
+                  Beach
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">6</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Free Day in El Nido</p>
+                <p class="plan">
+                  Explore town, optional activities, beach relaxation
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">7</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Departure</p>
+                <p class="plan">
+                  Transfer back to Puerto Princesa for departure flight
+                </p>
+              </div>
+            </div>
+            <div class="day-plan">
+              <div class="day-num">
+                <p class="d">Day</p>
+                <p class="num">8</p>
+              </div>
+              <div class="sched-plan">
+                <p class="sched">Departure</p>
+                <p class="plan">
+                  Transfer back to Puerto Princesa for departure flight
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="others">
+          <button class="des-btn">View Destinations</button>
+          <button class="des-btn">Download PDF</button>
+          <button class="des-btn">Customize</button>
+        </div>
+      </div>
     </div>
 
     <div class="search-des">
-        <p class="cant-find">Need a Custom Itinerary?</p>
-        <p class="srch-des">Let us create a personalized travel plan tailored to your preferences and budget</p>
+      <p class="cant-find">Need a Custom Itinerary?</p>
+      <p class="srch-des">
+        Let us create a personalized travel plan tailored to your preferences
+        and budget
+      </p>
 
-        <button id="srch-btn">Request Custom Itinerary</button>
+      <button id="srch-btn">Request Custom Itinerary</button>
     </div>
 
     <footer>
-        <div class="travspo-des">
-            <p class="trav">TravSpo</p>
-            <p class="trav-des">You guide to exploring the beautiful Philippines</p>
-        </div>
-        <div class="explore">
-            <p class="ex-des">Explore</p>
-            <ul class="exp-ul">
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Destinations</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Itineraries</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Gallery</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Travel Tips</a>
-                </li>
-            </ul>
-        </div>
-        <div class="resources">
-            <p class="res-des">Resources</p>
-            <ul class="exp-ul">
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Travel Guide</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Blog</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">FAQ</a>
-                </li>
-            </ul>
-        </div>
-        <div class="connect">
-            <p class="conn-des">Connect</p>
-            <ul class="exp-ul">
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Instagram</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Facebook</a>
-                </li>
-                <li class="exp-li">
-                    <a href="#" class="exp-a">Twitter</a>
-                </li>
-            </ul>
-        </div>
+      <div class="travspo-des">
+        <p class="trav">TravSpo</p>
+        <p class="trav-des">Your guide to exploring the beautiful Philippines</p>
+      </div>
+      <div class="explore">
+        <p class="ex-des">Explore</p>
+        <ul class="exp-ul">
+          <li class="exp-li">
+            <a href="#" class="exp-a">Destinations</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">Itineraries</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">Gallery</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">Travel Tips</a>
+          </li>
+        </ul>
+      </div>
+      <div class="resources">
+        <p class="res-des">Resources</p>
+        <ul class="exp-ul">
+          <li class="exp-li">
+            <a href="#" class="exp-a">Travel Guide</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">Blog</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="connect">
+        <p class="conn-des">Connect</p>
+        <ul class="exp-ul">
+          <li class="exp-li">
+            <a href="#" class="exp-a">Instagram</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">Facebook</a>
+          </li>
+          <li class="exp-li">
+            <a href="#" class="exp-a">Twitter</a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
-    
     <script src="../js/itineraries.js"></script>
-</body>
+  </body>
 </html>

@@ -5,17 +5,7 @@ body{
     padding: 4.5em 0 0 0;
     margin: 0;
     position: relative;
-}
-header{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    padding: 0 11em;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1000;
+    cursor: default;
 }
 header{
     display: flex;
@@ -44,6 +34,8 @@ header{
     list-style: none;
     margin: 0;
     position: relative;
+    padding-left: 1em;
+    gap: 0.5em;
 }
 .nav-li{
     height: 4.5em;
@@ -54,7 +46,7 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 1.5em;
+    padding: 0 1em;
     color: black;
     font-size: 1em;
     transition: 0.2s ease-in;
@@ -148,38 +140,74 @@ header{
     transform: translateY(-5%);
     color: white;
 }
+
+.hover-img:hover{
+    transform: translateY(-3%);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+}
+
 .show-destination{
     min-height: 85vh;
     margin: 0 0 3em 0;
     padding: 1em 11em;
+    gap: 1.8em;   
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
-    gap: 1.5em;   
 }
-
-.hover-img:hover{
-    transform: translateY(-5%);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+.dest-card1, .dest-card2, .dest-card3 {
+    display: flex;
+    flex-direction: column;
+}
+.dest-card1{
+    grid-row: span 2;
+}
+.img1, .img2, .img3{
+    border-radius: 0.5em;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
 }
 .img1{
-    grid-row: span 2;
-    height: 60vh;
-    background-color: #eee;
-    border-radius: 0.5em;
     background-image: url(../img/Vigan\ City\ 1.jpg);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
-}
-.img2, .img3{
-    background-color: #eee;
-    border-radius: 0.5em; 
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);  
+    min-height: 76vh;
 }
 .img2{
     background-image: url(../img/Bohol\ 1\ .jpg);
+    min-height:35vh;
 }
 .img3{
     background-image: url(../img/Siargao\ Island\ 3.jpg);
+    min-height: 35vh;
+}
+
+/* Responsive adjustments for show-destination images */
+@media (max-width: 1024px) {
+    .img1 {
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        min-height: 30vh;
+    }
+    .img2, .img3 {
+        min-height: 25vh;
+    }
+}
+.des-sm{
+    margin-top: 1em;
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    border-radius: 0.6em;
+}
+.loc-name{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 0;
+}
+.loc-des{
+    text-align: justify;
+    line-height: 1.3em;
 }
 hr{
     width: 85%;
@@ -228,8 +256,21 @@ hr{
     margin: 1.5em 0 0 0;
 }
 .hov-eff:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
      box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+}
+.tp-des{
+    background-color: lightgray;
+    font-size: 0.9em;
+    padding: 0.7em;
+    margin-top: 0.5em;
+    text-align: justify;
+    border-radius: 0.5em;
+    line-height: 1.3em;
+}
+.name{
+    margin-bottom: 0;
+    font-weight: 600;
 }
 .img-cont1, .img-cont2, .img-cont3, .img-cont4, .img-cont5, .img-cont6, .img-cont7, .img-cont8, .img-cont9, .img-cont10, .img-cont11, .img-cont12, .img-cont13, .img-cont14, .img-cont15{
     height: 30vh;
@@ -253,28 +294,28 @@ hr{
     background-image: url(../img/Vigan\ City\ 1.jpg);
 }
 .img-cont6{
-    background-image: url(../img/Casino\ Peak\ Hike\ In\ Cebu.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 1.jpg);
 }
 .img-cont7{
-    background-image: url(../img/mount\ luho\ in\ boracay.jpg);
+    background-image: url(../img/Boracay\ Beach.jpg);
 }
 .img-cont8{
-    background-image: url(../img/mount-darala\ in\ palawan.jpg);
+    background-image: url(../img/Palawan\ Island\ 1.jpg);
 }
 .img-cont9{
     background-image: url(../img/Siargao\ Island\ 1.jpg);
 }
 .img-cont10{
-    background-image: url(../img/Bohol\ Sea\ of\ Clouds\ \(Mt.\ Puntaas\).jpg);
+    background-image: url(../img/Bohol\ 1\ .jpg);
 }
 .img-cont11{
-    background-image: url(../img/palm\ tree\ rope\ swing\ in\ siargao.jpg);
+    background-image: url(../img/Siargao\ Island\ 2.jpg);
 }
 .img-cont12{
     background-image: url(../img/Manila\ Rizal\ Park.jpg);
 }
 .img-cont13{
-    background-image: url(../img/Palawan\ city.jpg);
+    background-image: url(../img/Palawan\ Island\ 2.jpg);
 }
 .img-cont14{
     background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
@@ -302,13 +343,19 @@ hr{
     font-size: 1.3em;
     font-weight: 600;
 }
+.top-name{
+    font-weight: 600;
+}
 .top-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 25vh;
     gap: 0.9em;
+}.top-card{
+    background-color: antiquewhite;
 }
 .top-card1, .top-card2, .top-card3, .top-card4, .top-card5, .top-card6{
+    height: 28vh;
     background-color: #eee;
     border-radius: 0.5em;
     box-shadow: 0 10px 10px rgba(0,0,0,0.4);
@@ -320,16 +367,13 @@ hr{
     background-image: url(../img/Bohol\ 2\ .jpg);
 }
 .top-card3{
-    background-image: url(../img/CLOUD\ 9\ Siargao\ Beach\ 1.avif);
+    background-image: url(../img/Siargao\ Island\ 2.jpg);
 }
 .top-card4{
     background-image: url(../img/Manila\ Quipo\ Chruch.jpg);
 }
 .top-card5{
-    background-image: url(../img/Palawan\ Island\ 2.jpg);
-}
-.top-card6{
-    background-image: url(../img/Siargao\ Island\ 2.jpg);
+    background-image: url(../img/Sumilon\ Island\ \ Cebu\ 2.jpg);
 }
 footer{
     border-top: 1px solid lightgray;
@@ -370,4 +414,325 @@ footer{
 }
 .d-none{
     display: none;
+}
+.search-box{
+    margin-left: 4em;
+    margin-right: 3em;
+    flex: 1;
+    text-align: end;
+    position: relative;
+}
+.user-inp{
+    min-width: 100%;
+    height: 3em;
+    border-radius: 1.7em;
+    outline: none;
+    padding-left: 3.3em;
+    border: 1px solid grey;
+}
+.s-hide{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (min-width: 1045px) and (max-width: 1500px) {
+    header {
+        padding: 0 4em;
+        flex-wrap: nowrap;
+    }
+    .title {
+        flex: 0 0 auto;
+        margin-right: 2em;
+    }
+    .search-box {
+        flex: 1 1 auto;
+        margin-left: 2em;
+        margin-right: 2.5em;
+        min-width: 200px;
+        max-width: 400px;
+    }
+    .nav {
+        flex: 0 1 auto;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    .nav-li {
+        flex: 0 0 auto;
+    }
+    .a-head {
+        font-size: 0.95em;
+        padding: 0 1em;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0 2em;
+        flex-wrap: wrap;
+    }
+    .title {
+        font-size: 1.6em;
+        margin-right: 1em;
+    }
+    .search-box {
+        margin-left: 1em;
+        margin-right: 2em;
+        flex: 0 1 auto;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-li {
+        height: 4em;
+    }
+    .a-head {
+        font-size: 0.9em;
+        padding: 0 0.8em;
+    }
+    .explore-sec {
+        padding: 2em 3em;
+    }
+    .show-destination {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+    }
+    .dest-card1 {
+        grid-row: span 1;
+    }
+    .category-sec {
+        padding: 2em 3em;
+    }
+    .top-dest {
+        padding: 2em 3em;
+    }
+    footer {
+        padding: 2em 3em;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 1.5em;
+    }
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 0.5em 0 0 0;
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .nav {
+        order: 2;
+        flex: 1 1 100%;
+        justify-content: flex-start;
+        margin-top: 0.5em;
+    }
+    .nav-li {
+        height: 3.8em;
+    }
+    .a-head {
+        font-size: 0.85em;
+        padding: 0 0.7em;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    header {
+        padding: 0 1em;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .title {
+        font-size: 1.4em;
+        flex: 1;
+    }
+    .search-box {
+        display: none !important;
+    }
+    .user-inp {
+        width: 100%;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        margin-top: 0;
+    }
+    .nav.active {
+        display: flex;
+    }
+    .nav-li {
+        width: 100%;
+        height: 3.5em;
+        border-bottom: 1px solid #eee;
+    }
+    .a-head {
+        font-size: 1em;
+        padding: 0 1.5em;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    body {
+        padding: 4.5em 0 0 0;
+    }
+    .explore-sec {
+        padding: 1.5em 1em;
+        min-height: auto;
+    }
+    .exp-des {
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+    }
+    .disc-des {
+        font-size: 0.95em;
+        margin-bottom: 1em;
+    }
+    #explore-btn {
+        padding: 0.8em 1.5em;
+        font-size: 0.95em;
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    .show-destination {
+        padding: 1.5em 1em;
+        gap: 1.5em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: auto;
+    }
+    .dest-card1 {
+        grid-row: span 1;
+    }
+    .dest-card1, .dest-card2, .dest-card3 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    .img1, .img2, .img3 {
+        width: 100%;
+        height: 25vh;
+        min-height: 200px;
+    }
+    .des-sm {
+        width: 100%;
+        padding: 1em 0 0 0;
+    }
+    .loc-name {
+        font-size: 1.2em;
+    }
+    .loc-des {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+    .category-sec {
+        padding: 1.5em 1em;
+    }
+    .exp-cat {
+        font-size: 1.5em;
+    }
+    .cat-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1em;
+        margin: 0.3em;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+    .top-dest {
+        padding: 1.5em 1.5em;
+    }
+    .top-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+    footer {
+        padding: 1.5em 1.5em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 0.8em;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .menu-toggle {
+        font-size: 1.3em;
+        padding: 0.4em;
+        min-width: 44px;
+        min-height: 44px;
+    }
+    body {
+        padding: 4.5em 0 0 0;
+    }
+    .exp-des {
+        font-size: 1.5em;
+    }
+    .disc-des {
+        font-size: 0.9em;
+    }
+    .top-cards {
+        grid-template-columns: 1fr;
+    }
+    .cat-btn {
+        font-size: 0.8em;
+        padding: 0.7em 1em;
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    button {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .a-head {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    img, .exp-img {
+        max-width: 100%;
+        height: auto;
+    }
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+    }
 }

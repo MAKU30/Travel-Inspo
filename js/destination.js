@@ -13,14 +13,6 @@ desBtns.forEach(desBtn => {
     })
 })
 
-const catBtns = document.querySelectorAll(".cat-btn");
-
-catBtns.forEach(catBtn =>  {
-    catBtn.addEventListener("click", () => {
-        catBtn.classList.add("cat-foc");
-    })
-})
-
 
 
 const allBtn = document.querySelector(".all-btn");
@@ -42,16 +34,53 @@ const adventureBtn = document.querySelector(".adventure-btn");
 const adventureImg = document.querySelectorAll(".adventure-img");
 
 allBtn.addEventListener("click", () => {
+    specBtn.style.backgroundColor = "black";
+    specBtn.style.color = "white";
+
+    beachBtn.style.backgroundColor = "white";
+    beachBtn.style.color = "black";
+
+    cityBtn.style.backgroundColor = "white";
+    cityBtn.style.color = "black";
+
+    natureBtn.style.backgroundColor = "white";
+    natureBtn.style.color = "black";
+
+    culturalBtn.style.backgroundColor = "white";
+    culturalBtn.style.color = "black";
+
+    adventureBtn.style.backgroundColor = "white";
+    adventureBtn.style.color = "black";
+
     allImg.forEach(img => {
         if(img.classList.contains("d-none")){
             img.style.display = "none";
         } else{
-            img.style.display = "block"
+            img.style.display = "block";
         }
     })
 })
 
 beachBtn.addEventListener("click", () => {
+
+    specBtn.style.backgroundColor = "white";
+    specBtn.style.color = "black";
+
+    beachBtn.style.backgroundColor = "black";
+    beachBtn.style.color = "white";
+
+    cityBtn.style.backgroundColor = "white";
+    cityBtn.style.color = "black";
+
+    natureBtn.style.backgroundColor = "white";
+    natureBtn.style.color = "black";
+
+    culturalBtn.style.backgroundColor = "white";
+    culturalBtn.style.color = "black";
+
+    adventureBtn.style.backgroundColor = "white";
+    adventureBtn.style.color = "black";
+
     beachImg.forEach(img => img.style.display = "block");
     cityImg.forEach(img => img.style.display = "none");
     natureImg.forEach(img => img.style.display = "none");
@@ -60,6 +89,25 @@ beachBtn.addEventListener("click", () => {
 })
 
 cityBtn.addEventListener("click", () => {
+
+    specBtn.style.backgroundColor = "white";
+    specBtn.style.color = "black";
+
+    beachBtn.style.backgroundColor = "white";
+    beachBtn.style.color = "black";
+
+    cityBtn.style.backgroundColor = "black";
+    cityBtn.style.color = "white";
+
+    natureBtn.style.backgroundColor = "white";
+    natureBtn.style.color = "black";
+
+    culturalBtn.style.backgroundColor = "white";
+    culturalBtn.style.color = "black";
+
+    adventureBtn.style.backgroundColor = "white";
+    adventureBtn.style.color = "black";
+
     cityImg.forEach(img => img.style.display = "block");
     beachImg.forEach(img => img.style.display = "none");
     natureImg.forEach(img => img.style.display = "none");
@@ -68,6 +116,25 @@ cityBtn.addEventListener("click", () => {
 })
 
 natureBtn.addEventListener("click", () => {
+
+    specBtn.style.backgroundColor = "white";
+    specBtn.style.color = "black";
+
+    beachBtn.style.backgroundColor = "white";
+    beachBtn.style.color = "black";
+
+    cityBtn.style.backgroundColor = "white";
+    cityBtn.style.color = "black";
+
+    natureBtn.style.backgroundColor = "black";
+    natureBtn.style.color = "white";
+
+    culturalBtn.style.backgroundColor = "white";
+    culturalBtn.style.color = "black";
+
+    adventureBtn.style.backgroundColor = "white";
+    adventureBtn.style.color = "black";
+
     natureImg.forEach(img => img.style.display = "block");
     beachImg.forEach(img => img.style.display = "none");
     cityImg.forEach(img => img.style.display = "none");
@@ -76,6 +143,25 @@ natureBtn.addEventListener("click", () => {
 })
 
 culturalBtn.addEventListener("click", () => {
+
+     specBtn.style.backgroundColor = "white";
+    specBtn.style.color = "black";
+
+    beachBtn.style.backgroundColor = "white";
+    beachBtn.style.color = "black";
+
+    cityBtn.style.backgroundColor = "white";
+    cityBtn.style.color = "black";
+
+    natureBtn.style.backgroundColor = "white";
+    natureBtn.style.color = "black";
+
+    culturalBtn.style.backgroundColor = "black";
+    culturalBtn.style.color = "white";
+
+    adventureBtn.style.backgroundColor = "white";
+    adventureBtn.style.color = "black";
+
     culturalImg.forEach(img => img.style.display = "block");
     beachImg.forEach(img => img.style.display = "none");
     natureImg.forEach(img => img.style.display = "none");
@@ -84,9 +170,56 @@ culturalBtn.addEventListener("click", () => {
 })
 
 adventureBtn.addEventListener("click", () => {
+
+     specBtn.style.backgroundColor = "white";
+    specBtn.style.color = "black";
+
+    beachBtn.style.backgroundColor = "white";
+    beachBtn.style.color = "black";
+
+    cityBtn.style.backgroundColor = "white";
+    cityBtn.style.color = "black";
+
+    natureBtn.style.backgroundColor = "white";
+    natureBtn.style.color = "black";
+
+    culturalBtn.style.backgroundColor = "white";
+    culturalBtn.style.color = "black";
+
+    adventureBtn.style.backgroundColor = "black";
+    adventureBtn.style.color = "white";
+
     adventureImg.forEach(img => img.style.display = "block");
     culturalImg.forEach(img => img.style.display = "none");
     beachImg.forEach(img => img.style.display = "none");
     natureImg.forEach(img => img.style.display = "none");
     cityImg.forEach(img => img.style.display = "none");
 })
+
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    const navLinks = navMenu.querySelectorAll('.a-head');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        });
+    });
+}
