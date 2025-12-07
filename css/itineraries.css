@@ -330,37 +330,73 @@ hr{
     }
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
     header {
-        padding: 0 1.5em;
-        flex-wrap: wrap;
+        padding: 0 1em;
+        flex-wrap: nowrap;
+        position: relative;
     }
     .title {
-        font-size: 1.5em;
+        font-size: 1.4em;
+        flex: 1;
     }
     .search-box {
+        display: none;
         order: 3;
         width: 100%;
         margin: 0.5em 0 0 0;
         flex: none;
     }
+    .search-box.active {
+        display: block;
+    }
     .user-inp {
         width: 100%;
     }
     .nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         width: 100%;
+        padding: 0;
+        z-index: 999;
+    }
+    .nav.active {
+        display: flex;
     }
     .nav-li {
+        width: 100%;
         height: 3.5em;
+        border-bottom: 1px solid #eee;
     }
     .a-head {
-        font-size: 0.9em;
-        padding: 0 0.8em;
+        font-size: 1em;
+        padding: 0 1.5em;
+        width: 100%;
+        justify-content: flex-start;
     }
     body {
-        padding: 6em 0 0 0;
+        padding: 4.5em 0 0 0;
     }
     .iti-intro {
         padding: 1.5em 1.5em;
@@ -391,26 +427,17 @@ hr{
 
 @media (max-width: 480px) {
     header {
-        padding: 0 1em;
+        padding: 0 0.8em;
     }
     .title {
+        font-size: 1.2em;
+    }
+    .menu-toggle {
         font-size: 1.3em;
-    }
-    .nav {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .nav-li {
-        width: 100%;
-        height: 3em;
-    }
-    .a-head {
-        width: 100%;
-        justify-content: center;
-        padding: 0;
+        padding: 0.4em;
     }
     body {
-        padding: 8em 0 0 0;
+        padding: 4.5em 0 0 0;
     }
     .day-title {
         font-size: 1.2em;
